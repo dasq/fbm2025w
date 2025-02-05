@@ -1,0 +1,82 @@
+:root {
+    color-scheme: light
+}
+
+.qxCTlb {
+    background: #5C1417;
+		background-color: rgb(92, 20, 23);
+	  border-radius: 10px;
+	  border: 2px solid #5C1417;
+	  width: auto;
+	  height: auto;
+	  padding: 5px;
+	  font-family: LoraSemiBold, 'Source Sans Pro';
+	  font-weight: 400;
+	  font-size: 19px;
+	  line-height: 1.1;
+	  color: white;
+	  text-transform: uppercase;
+	  letter-spacing: 1px;
+}
+
+.qxCTlb:hover {
+  background-color: white;
+  color: #5C1417;
+  border: 2px solid #5C1417; 
+}
+
+.hur54b {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: rgba(32, 33, 36, .6);
+    padding: 72px;
+    z-index: 9999
+}
+
+.mmGMM {
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    width: 100%;
+    height: 100%
+}
+
+.Xfsokf {
+    position: fixed;
+    top: 26px;
+    right: 72px;
+    display: -moz-box;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 18px;
+    height: 36px;
+    padding: 16px;
+    cursor: pointer
+}
+
+.Xfsokf {
+    background-color: rgb(60, 64, 67)
+}
+
+.L0Dvsd {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 8px
+}
+
+.uE25ec {
+    font-size: 14px;
+    font-family: "Google Sans", Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: .25px;
+    color: #fff
+}
+
+sentinel {}
