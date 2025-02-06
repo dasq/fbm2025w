@@ -9,7 +9,8 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
 <!--===============================================================================================-->
@@ -43,7 +44,7 @@
 					<!-- Logo -->
 					<div class="logo">
 						<a href="index.html">
-							<img src="images/icons/logo-head-white.png" alt="FBM-LOGO" data-logofixed="images/icons/logo-head-black.png">
+							<img src="images/icons/logo-head-white.png" alt="FBM-LOGO" data-logofixed="images/icons/logo-head-white.png">
 						</a>
 					</div>
 
@@ -55,7 +56,7 @@
 									<a href="index.html">Home</a>
 								</li>
 								<li>
-									<a href="menu.html"><span class="submenu-icon">∨</span> Guitariverse</a>
+									<a href="menu.html"></span>Guitariverse <span class="submenu-icon">&#x25BC;</span></a>
 									<ul class="sub_menu">
 										<li>
 											<a href="index.html">Solo Project</a>
@@ -70,7 +71,7 @@
 								</li>
 								
 								<li>
-									<a href="gallery.html"><span class="submenu-icon">∨</span> Lessons</a>
+									<a href="gallery.html">Lessons <span class="submenu-icon">&#x25BC;</span></a>
 									<ul class="sub_menu">
 										<li>
 											<a href="index.html">Dresden Neustadt</a>
@@ -85,7 +86,7 @@
 								</li>
 								
 								<li class="dropdown">
-									<a href="blog.html" class="dropbtn"><span class="submenu-icon">∨</span> Media</a>
+									<a href="blog.html" class="dropbtn">Media <span class="submenu-icon">&#x25BC;</span></a>
 									<ul class="sub_menu dropdown-content">
 										<li>
 											<a href="index.html">Albums</a>
@@ -110,10 +111,11 @@
 
 					<!-- Social -->
 					<div class="social flex-w flex-l-m p-r-20">
-						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-youtube m-l-21" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-bandcamp m-l-21" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
+						<a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+						<a href="#"><i class="fab fa-youtube m-l-21" aria-hidden="true"></i></a>
+						<a href="#"><i class="fab fa-bandcamp m-l-21" aria-hidden="true"></i></a>
+						<a href="#"><i class="fab fa-facebook m-l-21" aria-hidden="true"></i></a>
+
 
 						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
 					</div>
@@ -215,7 +217,7 @@
 			<div class="slick1">
 				<div class="item-slick1 item1-slick1" style="background-image: url(images/background/faridbenmiles.jpg);">
 					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-10">
-						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-10" data-appear="fadeInUp">
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-0" data-appear="fadeInUp">
 							<b>Farid Ben Miles</b>
 						</h2>
 						<!--<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
@@ -225,10 +227,15 @@
 							Passionate about creating music that connects cultures, generations, and hearts.
 						</p>
 						<div class="wrap-btn-slide1 animated visible-false p-t-20" data-appear="zoomIn">
-							<!-- Button1 -->
-							<a href="menu.html" class="btn1 flex-c-m size6 txt3 trans-0-4">
+							<!-- Button1 
+							<a href="contact.html" class="btn1 flex-c-m size6 txt3 trans-0-4">
 								Get in touch
-							</a>
+							</a>-->
+							<div class="d-flex justify-content-center align-items-center">
+								<button class="btn1 flex-c-m size6 txt3 trans-0-4" data-toggle="modal" data-target="#modal-calendar">
+									Let's get in touch <i class="m-l-10 fas fa-calendar-alt"></i>
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -238,7 +245,7 @@
 	
 	
 	<!-- Welcome -->
-	<section class="section-welcome bg1-pattern p-t-00 p-b-0">
+	<section class="section-welcome bg1 p-t-00 p-b-0">
 		<!--<div class="title-section-ourmenu t-center m-b-22">
 				<span class="tit2 t-center">
 					Discover
@@ -248,17 +255,17 @@
 					What I Love
 				</h3>
 			</div>-->
-		<div class="bg-gradient">
+		<div class="">
 			<div class="content-intro p-t-40 p-b-80">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4 t-center">
 							<!-- Block1 -->
-							<div class="blo1 p-around8 bo-rad-10">
+							<div class="p-around8 bo-rad-5">
 								<span class="tit6">
 									Guitarist
 								</span>
-								<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
+								<div class="wrap-pic-blo1 bo-rad-5 hov-img-zoom">
 									<a href="#"><img src="images/photos/fbm-congress.jpg" alt="IMG-INTRO"></a>
 								</div>
 
@@ -272,8 +279,8 @@
 									</p>
 									
 									<a href="#" class="btn4 flex-c-m size5 txt3 trans-0-4">
-										Request a Booking
-										<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+										Request a Booking &#10095
+										
 									</a>
 								</div>
 							</div>
@@ -281,11 +288,11 @@
 
 						<div class="col-md-4 t-center">
 							<!-- Block1 -->
-							<div class="blo1 p-around8 bo-rad-10">
+							<div class="p-around8 bo-rad-5">
 								<span class="tit6">
 									Teacher
 								</span>
-								<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
+								<div class="wrap-pic-blo1 bo-rad-5 hov-img-zoom">
 									<a href="#"><img src="images/photos/fbm-02.jpg" alt="IMG-INTRO"></a>
 								</div>
 
@@ -299,8 +306,7 @@
 									</p>
 
 									<a href="#" class="btn4 flex-c-m size5 txt3 trans-0-4">
-										Book a Kennenlernen
-										<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+										Book a Kennenlernen &#10095
 									</a>
 								</div>
 							</div>
@@ -308,11 +314,11 @@
 
 						<div class="col-md-4 t-center">
 							<!-- Block1 -->
-							<div class="blo1 p-around8 bo-rad-10 ">
+							<div class="p-around8 bo-rad-5 ">
 								<span class="tit6">
 									Creator
 								</span>
-								<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
+								<div class="wrap-pic-blo1 bo-rad-5 hov-img-zoom">
 									<a href="#"><img src="images/photos/fbm-01.jpg" alt="IMG-INTRO"></a>
 								</div>
 
@@ -326,8 +332,7 @@
 									</p>
 
 									<a href="#" class="btn4 flex-c-m size5 txt3 trans-0-4">
-										Buy my Fingerstyle Pack
-										<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+										Buy my Fingerstyle Pack &#10095
 									</a>
 								</div>
 							</div>
@@ -338,59 +343,63 @@
 			</div>
 		
 		
-			<div class="title-review t-center m-b-2 p-t-60">
-				<span class="tit2 p-l-15 p-r-15 p-t-0">
-					From private lessons to global festivals, </br>I’m thankful for every moment to share my passion.
-				</span>
-
-				<!--<h3 class="tit8 t-center p-l-20 p-r-15 p-t-3">
-					Review
-				</h3> --!>
-			</div>
 			
-			<div class="content-intro p-t-0 p-b-30">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-sm-4 col-md-2 p-t-30">
-							<img src="images/logos/soundofdresden.png" alt="IMG-LOGO">
-						</div>
-						<!--<div class="col-6 col-sm-4 col-md-2 p-t-30">
-							<img src="images/logos/palaissommer.png" alt="IMG-LOGO">
-						</div>--!>
-						<div class="col-4 col-sm-4 col-md-2 p-t-30">
-							<img src="images/logos/jazzclubtonne.png" alt="IMG-LOGO">
-						</div>
-						<div class="col-4 col-sm-4 col-md-2 p-t-30">
-							<img src="images/logos/deutscherallergiekongress.png" alt="IMG-LOGO">
-						</div>
-						<div class="col-4 col-sm-4 col-md-2 p-t-30">
-							<img src="images/logos/tedxdresden.png" alt="IMG-LOGO">
-						</div>
-						<div class="col-4 col-sm-4 col-md-2 p-t-30">
-							<img src="images/logos/rudolstadtfestival.png" alt="IMG-LOGO">
-						</div>
-						<div class="col-4 col-sm-4 col-md-2 p-t-30">
-							<img src="images/logos/jazztagedresden.png" alt="IMG-LOGO">
-						</div>
-						
-						<!--<div class="col-6 col-sm-4 col-md-2 p-t-30">
-							<img src="images/logos/moshairfestival2.png" alt="IMG-LOGO">
-						</div>--!>
+		</div>
+	</section>
+	
+	
+	
+	<!-- experience 
+	<section class="bg9 ">
+		<div class="title-review t-center m-b-20 p-t-60">
+			<span class="tit5 p-l-15 p-r-0 p-t-0">
+				From private lessons to global festivals, </br>I’m thankful for every moment to share my passion.
+			</span>
+
+		</div>
+				
+		<div class="content-intro p-t-0 p-b-60">
+			<div class="container">
+				<div class="row">
+					<div class="col-4 col-sm-4 col-md-2 p-t-30">
+						<img src="images/logos/soundofdresden.png" alt="IMG-LOGO">
+					</div>
+					<div class="col-6 col-sm-4 col-md-2 p-t-30">
+						<img src="images/logos/palaissommer.png" alt="IMG-LOGO">
+					</div>
+					<div class="col-4 col-sm-4 col-md-2 p-t-30">
+						<img src="images/logos/jazzclubtonne.png" alt="IMG-LOGO">
+					</div>
+					<div class="col-4 col-sm-4 col-md-2 p-t-30">
+						<img src="images/logos/deutscherallergiekongress.png" alt="IMG-LOGO">
+					</div>
+					<div class="col-4 col-sm-4 col-md-2 p-t-30">
+						<img src="images/logos/tedxdresden.png" alt="IMG-LOGO">
+					</div>
+					<div class="col-4 col-sm-4 col-md-2 p-t-30">
+						<img src="images/logos/rudolstadtfestival.png" alt="IMG-LOGO">
+					</div>
+					<div class="col-4 col-sm-4 col-md-2 p-t-30">
+						<img src="images/logos/jazztagedresden.png" alt="IMG-LOGO">
+					</div>
+					
+					<div class="col-6 col-sm-4 col-md-2 p-t-30">
+						<img src="images/logos/moshairfestival2.png" alt="IMG-LOGO">
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</section>--!>
 	
 	<!-- Video -->
-	<section class="section-video parallax100" style="background-image: url(images/background/Fishing-bw.jpg);">
+	<section class="section-video parallax100" style="background-image: url(images/background/fbm-liveintheattic.jpg);">
 		<div class="content-video t-center p-t-225 p-b-250">
-			<span class="tit2 p-l-15 p-r-15">
+			<!-- <span class="tit2 p-l-15 p-r-15">
 				Discover
-			</span>
+			</span>-->
 
 			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
-				Who I Am
+				My Music
 			</h3>
 
 			<div class="btn-play ab-center size16 hov-pointer m-l-r-auto m-t-43 m-b-33" data-toggle="modal" data-target="#modal-video-01">
@@ -402,141 +411,172 @@
 	</section>
 	
 	<!-- Intro -->
-	<section class="section-welcome bg1-pattern p-t-0 p-b-0">
-		<div class="bg-gradient">
+	<section class="section-welcome bg1 p-t-0 p-b-0">
+		<div class="">
 			<div class="container p-t-40 p-b-20">
 				<div class="row">
 					<div class="col-md-6 p-t-45 p-b-30">
 						<div class="wrap-text-welcome t-center">
-							<span class="tit2 t-center">
-								Welcome
-							</span>
+												
+							<div class="blo1 p-around8 bo-rad-5">
+								
+								<div class="wrap-text-blo1 p-t-35">
+									<span class="tit2 t-center">
+										Welcome
+									</span>
+									<h3 class="tit3 t-center m-b-35 m-t-5">
+										This is me
+									</h3>
 
-							<h3 class="tit3 t-center m-b-35 m-t-5">
-								This is me
-							</h3>
-							<div class="blo5 m-b-22 ">
-								<p class="t-center size3 m-l-r-auto ">
-									I am a globetrotter in the field of the guitar, combining flamenco, jazz and blues with influences from Arabic and European music culture. 
+									<p class="m-b-5">
+										I am a globetrotter in the field of the guitar, combining flamenco, jazz and blues with influences from Arabic and European music culture. 
 									Often compared to masters such as Andy McKee, John Butler and Rodrigo y Gabriela, my music invites you to dream of faraway lands. 
-									It takes you on a soulful journey through Asia, North Africa, Europe and beyond.
-								</p>
-								<a href="about.html" class="txtlink">
-								Read more about me
-								</a>
+									It takes you on a soulful journey through Asia, North Africa, Europe and beyond..
+									</p>
+									
+									<a href="about.html" class="txtlink">
+										Read more about me
+									</a>
+									
+									<div class="d-flex justify-content-center align-items-center">
+										<button class="btn4 flex-c-m txt3 trans-0-4" data-toggle="modal" data-target="#modal-calendar">
+											Let's get in touch <i class="m-l-10 fas fa-calendar-alt"></i>
+										</button>
+									</div>
+									
+								</div>
+								<div class="t-center">
+									
+									
+									
+
+								</div>
 							</div>
-							<a href="https://calendar.app.google/RPijdJRGKzc6KGtA6" class="txt3 btn4" target="_blank">
-								To my Google Calendar <i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-							</a>
 						</div>
 					</div>
 					
-					<div class="col-md-6 p-b-30 p-t-70">
-						<div class="wrap-pic-welcome size2 bo-rad-200 hov-img-zoom m-l-r-auto">
-							<a href="about.html"><img src="images/photos/fbm - portrait - square.JPG" alt="FBM-Portrait"></a>
-						</div>
-					</div>-
-					
-				</div>
-			</div>
-			
-			<div class="title-review t-center m-b-2 p-t-50">
-				<h3 class="tit2 p-l-15 p-r-15 p-t-0">
-					Awards
-				</h3>
-
-				<!--<h3 class="tit8 t-center p-l-20 p-r-15 p-t-3">
-					Review
-				</h3> --!>
-			</div>
-			
-			<div class="content-intro p-t-0 p-b-60">
-				
-				<div class="wrap-slick3">
-					<div class="slick3">
-						<div class="item-slick3 item1-slick3">
-							<div class="wrap-content-slide3 p-b-50 p-t-50">
-								<div class="container">
-									<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
-										<img src="images/photos/schmalfilmtage.webp" alt="IGM-Schmalfiltage">
-									</div>
-
-									<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
-										<p class="t-center txt12 size15 m-l-r-auto">
-											<b>Best Live Film Scoring Performance</b></br>"It was brought to life with live music once again—and what a delight it was! In front of a full house, 
-									Farid Ben Miles won the jury prize for his score to the film Hochofen (Blast Furnace). 
-									According to the jury—composed of Annett Groh, Florian Hohmann, and Christian "Lasse" Brähler—the guitarist created the perfect mood for the film, 
-									seamlessly merging image and sound. With his calm and atmospheric melodies, Miles set the blast furnace ablaze in the Motorenhalle.”
-										</p>
-
-										<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
-											Dresdner Schmalfilmtage 2022
-										</div>
+					<div class="col-md-6 p-t-45 p-b-30">
+						<div class="wrap-text-welcome t-center">
+												
+							<div class="blo1 p-around8 bo-rad-5">
+								
+								<div class="wrap-text-blo1 p-t-35">
+									<div class="awards">
+										<div class="blo1 bo-rad-5 hov-img-zoom">
+											<a href="#"><img src="images/photos/fbm - portrait - square.JPG" alt="IMG-Portrait"></a>
+										</div>	
 									</div>
 								</div>
 							</div>
 						</div>
-
-						<div class="item-slick3 item2-slick3">
-							<div class="wrap-content-slide3 p-b-50 p-t-50">
-								<div class="container">
-									<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
-										<img src="images/photos/Dresdner-Leinwand.png" alt="IGM-SoundofDresden">
-									</div>
-
-									<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
-										<p class="t-center txt12 size15 m-l-r-auto">
-											<b>Sound of Dresden - Public Price</b></br>"The instrumental guitarist from France has traveled the world and developed his own unique musical language, 
-										drawing from many sources: African, European, and American. World music in the truest sense, 
-										yet so distinctive and captivating that he has become the audience favorite.”
-										</p>
-
-										<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
-											Sound of Dresden 2017
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="item-slick3 item3-slick3">
-							<div class="wrap-content-slide3 p-b-50 p-t-50">
-								<div class="container">
-									<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
-										<img src="images/photos/heydresden.jpg" alt="IGM-ViertelTakt">
-									</div>
-
-									<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
-										<p class="t-center txt12 size15 m-l-r-auto">
-											<b>VIERTELtakt Winner</b></br>"With deliberately crafted rhythms, he played his way into the hearts of the audience with his “Cinematic World Fingerstyle.” 
-									Farid Ben Miles transported us with his magnificent acoustic compositions into a world where we could peacefully let our thoughts wander. 
-									From the Orient to New Zealand, from Paris to the Florence of the Elbe, from the Land of Takka-Tukka Adventures to The NeverEnding Story — 
-									there were no limits to dreams and imagination.”
-										</p>
-
-										<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
-											ViertelTakt Dresden 2016
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
 					</div>
-
-					<div class="wrap-slick3-dots m-t-30"></div>
+					
+					<div class="col-md-6 p-t-45 p-b-30">
+						
+							
+							
+					</div>					
 				</div>
-				
-			</div>	
+			</div>
 		</div>
 	</section>
+	
+	
+	<section class="bg9 ">
+		<div class="title-review t-center m-b-2 p-t-50">
+			<h3 class="tit3 t-center m-b-35 m-t-5">
+				Awards
+			</h3>
+		</div>
+			
+		<div class="content-intro p-t-0 p-b-60">
+			
+			<div class="wrap-slick3">
+				<div class="slick3">
+					<div class="item-slick3 item1-slick3">
+						<div class="wrap-content-slide3 p-b-50 p-t-50">
+							<div class="container">
+								<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
+									<img src="images/photos/schmalfilmtage.webp" alt="IGM-Schmalfiltage">
+								</div>
+
+								<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
+									<p class="t-center txt12 size15 m-l-r-auto">
+										<b>Best Live Film Scoring Performance</b></br>"It was brought to life with live music once again—and what a delight it was! In front of a full house, 
+								Farid Ben Miles won the jury prize for his score to the film Hochofen (Blast Furnace). 
+								According to the jury—composed of Annett Groh, Florian Hohmann, and Christian "Lasse" Brähler—the guitarist created the perfect mood for the film, 
+								seamlessly merging image and sound. With his calm and atmospheric melodies, Miles set the blast furnace ablaze in the Motorenhalle.”
+									</p>
+
+									<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
+										Dresdner Schmalfilmtage 2022
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-slick3 item2-slick3">
+						<div class="wrap-content-slide3 p-b-50 p-t-50">
+							<div class="container">
+								<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
+									<img src="images/photos/Dresdner-Leinwand.png" alt="IGM-SoundofDresden">
+								</div>
+
+								<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
+									<p class="t-center txt12 size15 m-l-r-auto">
+										<b>Sound of Dresden - Public Price</b></br>"The instrumental guitarist from France has traveled the world and developed his own unique musical language, 
+									drawing from many sources: African, European, and American. World music in the truest sense, 
+									yet so distinctive and captivating that he has become the audience favorite.”
+									</p>
+
+									<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
+										Sound of Dresden 2017
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-slick3 item3-slick3">
+						<div class="wrap-content-slide3 p-b-50 p-t-50">
+							<div class="container">
+								<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
+									<img src="images/photos/heydresden.jpg" alt="IGM-ViertelTakt">
+								</div>
+
+								<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
+									<p class="t-center txt12 size15 m-l-r-auto">
+										<b>VIERTELtakt Winner</b></br>"With deliberately crafted rhythms, he played his way into the hearts of the audience with his “Cinematic World Fingerstyle.” 
+								Farid Ben Miles transported us with his magnificent acoustic compositions into a world where we could peacefully let our thoughts wander. 
+								From the Orient to New Zealand, from Paris to the Florence of the Elbe, from the Land of Takka-Tukka Adventures to The NeverEnding Story — 
+								there were no limits to dreams and imagination.”
+									</p>
+
+									<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
+										ViertelTakt Dresden 2016
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="wrap-slick3-dots m-t-30"></div>
+			</div>
+			
+		</div>	
+	</section>
+	
+
 
 	
 	<section class="section-intro">
-		<div class="header-intro parallax100 t-center p-t-225 p-b-250" style="background-image: url(&quot;images/background/fbm-18.jpg&quot;); background-position: center 17.3333px;">
-			<span class="tit2 p-l-15 p-r-15">
+		<div class="header-intro parallax100 t-center p-t-225 p-b-250" style="background-image: url(&quot;images/background/fbm-palaissommer.jpg&quot;); background-position: center 17.3333px;">
+			<!--<span class="tit2 p-l-15 p-r-15">
 				Connect
-			</span>
+			</span>-->
 
 			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
 				Get in Touch
@@ -548,8 +588,8 @@
 	
 
 	<!-- Booking -->
-	<section class="section-booking bg1-pattern p-t-0 p-b-0">
-		<div class="bg-gradient">
+	<section class="section-booking bg1 p-t-0 p-b-0">
+		<div class="">
 			<div class="container p-t-40 p-b-20">
 					<div class="row">
 						<div class="col-md-6 p-t-45 p-b-30">
@@ -569,28 +609,18 @@
 										Simply choose a time that works for you using the link below—I look forward to connecting with you!
 									</p>
 								</div>
-								<!-- Google Calendar Appointment Scheduling begin -->
-								<link href="calendar/scheduling-button-script.css" rel="stylesheet">
-								<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-								<script>
-								(function() {
-								  var target = document.currentScript;
-								  window.addEventListener('load', function() {
-									calendar.schedulingButton.load({
-									  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ35Fj0vgpJ5HiFwsxTE2jnN9o4hoVkzW6d7RY3GfUWUku_1DDOJfchPHmXYv_AwKG4C-Fsjo1Yo?gv=true',
-									  color: '#5c1417',
-									  label: 'Book a Rendez-vous',
-									  target,
-									});
-								  });
-								})();
-								</script>
-								<!-- end Google Calendar Appointment Scheduling -->
+								
+								<div class="d-flex justify-content-center align-items-center">
+									<button class="btn4 flex-c-m txt3 trans-0-4" data-toggle="modal" data-target="#modal-calendar">
+										Let's get in touch <i class="m-l-10 fas fa-calendar-alt"></i>
+									</button>
+								</div>
+
 							</div>
 						</div>
 						
 						<div class="col-lg-6 p-b-30 p-t-18 m-t-10">
-							<div class="wrap-pic-booking size2 bo-rad-10 hov-img-zoom m-l-r-auto">
+							<div class="wrap-pic-booking size2 bo-rad-5 hov-img-zoom m-l-r-auto">
 								<img src="images/photos/fbm-tedx-small.jpg" alt="FBM-Portrait17">
 							</div>
 						</div>
@@ -600,15 +630,21 @@
 			
 			
 			
-			<!-- Sign up -->
-			<div class="p-t-60 p-b-25">
+			
+		</div>
+	</section>
+
+	
+	<!-- Sign up -->
+		<section class="bg9 ">
+			<div class="p-t-60 p-b-60">
 				<form action="//faridbenmiles.us12.list-manage.com/subscribe/post?u=b48a727301057021e14543d69&amp;id=6fdffcc9f1" class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5" >
 					<span class="txt5 m-10">
 						Let's stay in touch
 					</span>
 
-					<div class="wrap-input-signup size17 bo2 bo-rad-10 bgwhite pos-relative txt10 m-10">
-						<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email-address" placeholder="Email Adrress">
+					<div class="wrap-input-signup size17 bo2 bo-rad-5 bgwhite pos-relative txt10 m-10">
+						<input class="bo-rad-5 sizefull txt10 p-l-20" type="text" name="email-address" placeholder="Email Adrress">
 						<i class="fa fa-envelope ab-r-m m-r-18" aria-hidden="true"></i>
 					</div>
 
@@ -618,18 +654,13 @@
 					</button>
 				</form>
 			</div>
-		</div>
-	</section>
-
-	
-
-
+		</section>
 	
 
 
 	<!-- Footer -->
-	<footer class="bg4">
-		<div class="bg-red-transparent ">
+	<footer class="bg4 gradient2">
+		<div class="bg2">
 			<div class="container p-t-20 p-b-20">
 				<div class="row">
 					<div class="col-sm-4 col-md-4 p-t-20">
@@ -640,12 +671,12 @@
 
 						<ul class="m-b-20">
 							<li class="txt14 m-b-14">
-								<i class="fa fa-map-marker fs-16 dis-inline-block size19" aria-hidden="true"></i>
+								<i class="fa fa-map-marker-alt fs-16 dis-inline-block size19" aria-hidden="true"></i>
 								Bautzner Str. 58, 01099 Dresden, Germany
 							</li>
 
 							<li class="txt14 m-b-14">
-								<i class="fa fa-phone fs-16 dis-inline-block size19" aria-hidden="true"></i>
+								<i class="fa fa-phone-alt fs-16 dis-inline-block size19" aria-hidden="true"></i>
 								(+49) 152 2517 3733
 							</li>
 
@@ -653,9 +684,11 @@
 								<i class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>
 								faridbenmiles@gmail.com
 							</li>
+							<li class="txt14 m-b-14">
+								<i class="fa fa-calendar-alt fs-13 dis-inline-block size19" aria-hidden="true"></i>
+								<a href="" class="txt14 c-white" data-toggle="modal" data-target="#modal-calendar">Book a call</a>
+							</li>
 						</ul>
-
-						
 					</div>
 
 					<div class="col-sm-4 col-md-4 p-t-20">
@@ -684,48 +717,62 @@
 								Videos
 							</a>
 						</div>
-						
 					</div>
 
 					<div class="col-sm-4 col-md-4 p-t-20">
-						<!-- - -->
-						<h4 class="txt13 m-b-32">
-							Book a Call
+						<!-- Social Links -->
+						<h4 class="txt13 m-b-33">
+							Social Networks
 						</h4>
-						
-						<a href="https://calendar.app.google/RPijdJRGKzc6KGtA6" class="txt14 btn2" target="_blank">To my Google Calendar <i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></a>
-						
 
+						<ul class="m-b-20">
+							<li class="txt14 m-b-14">
+								<a href="#" class="fs-15 txt17 c-white">
+									<i class="fab fa-youtube fs-16 dis-inline-block size19" aria-hidden="true"></i>
+									YouTube
+								</a>
+							</li>
+
+							<li class="txt14 m-b-14">
+								<a href="#" class="fs-15 txt17 c-white">
+									<i class="fab fa-facebook fs-16 dis-inline-block size19" aria-hidden="true"></i>
+									Facebook
+								</a>
+							</li>
+
+							<li class="txt14 m-b-14">
+								<a href="#" class="fs-15 txt17 c-white">
+									<i class="fab fa-instagram fs-13 dis-inline-block size19" aria-hidden="true"></i>
+									Instagram
+								</a>
+							</li>
+							<li class="txt14 m-b-14">
+								<a href="#" class="fs-15 txt17 c-white">
+									<i class="fab fa-tiktok fs-13 dis-inline-block size19" aria-hidden="true"></i>
+									TikTok
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="end-footer">
-			<div class="bg2">
-				<div class="container">
+
+			<div class="container">
 					<div class="flex-sb-m flex-w p-t-22 p-b-22">
-						<div class="p-t-5 p-b-5">
-							<a href="#" class="fs-15 txt17"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-							<a href="#" class="fs-15 txt17"><i class="fa fa-facebook m-l-18" aria-hidden="true"></i></a>
-							<a href="#" class="fs-15 txt17"><i class="fa fa-twitter m-l-18" aria-hidden="true"></i></a>
+						<div class="txt17 p-r-0 p-t-5 p-b-5">
+							<a href="#" class="fs-15 txt17 c-white">Impressum</a>
 						</div>
 						
-						
-						
+						<div class="txt17 p-r-0 p-t-5 p-b-5">
+							<a href="#" class="fs-15 txt17 c-white">Cookies</a>
+						</div>
 						<div class="txt17 p-r-20 p-t-5 p-b-5">
 							Copyright &copy; 2025 All rights reserved  |  Website made by Farid with the help of Colorlib.
 						</div>
 						
-						<div class="txt17 p-r-0 p-t-5 p-b-5">
-							<a href="#" class="fs-15 txt17">Impressum</a>
-						</div>
 						
-						<div class="txt17 p-r-0 p-t-5 p-b-5">
-							<a href="#" class="fs-15 txt17">Cookies</a>
-						</div>
 					</div>
 				</div>
-			</div>
 		</div>
 
 	</footer>
@@ -740,7 +787,7 @@
 
 	<!-- Container Selection1 -->
 	<div id="dropDownSelect1"></div>
-
+	
 	<!-- Modal Video 01-->
 	<div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
 
@@ -750,7 +797,22 @@
 			<div class="wrap-video-mo-01">
 				<div class="w-full wrap-pic-w op-0-0"><img src="images/icons/video-16-9.jpg" alt="IMG"></div>
 				<div class="video-mo-01">
-					<iframe src="https://www.youtube.com/embed/SbUtBtzo9Qg?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+					<!-- <iframe src="https://www.youtube.com/embed/SbUtBtzo9Qg?rel=0&amp;showinfo=0" allowfullscreen></iframe>-->
+					<iframe src="https://www.youtube.com/embed/videoseries?si=gjAYf9yE-2g0AMwP&amp;list=PL6i964kxZ6uNYnvabEwdPgFGxqFFq-j0c" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 📅 Google Calendar Modal -->
+	<div id="modal-calendar" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<iframe id="calendarIframe" width="100%" height="600" frameborder="0"></iframe>
 				</div>
 			</div>
 		</div>

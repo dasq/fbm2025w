@@ -106,24 +106,6 @@
         $('.video-mo-01').children('iframe')[0].src = srcOld;
         $('.video-mo-01').css('opacity','0');
     });
-	
-	 /*[ Play video 02]
-    ===========================================================*/
-    var srcOld = $('.video-mo-02').children('iframe').attr('src');
-
-    $('[data-target="#modal-video-02"]').on('click',function(){
-        $('.video-mo-02').children('iframe')[0].src += "&autoplay=1";
-
-        setTimeout(function(){
-            $('.video-mo-02').css('opacity','1');
-        },300);      
-    });
-
-    $('[data-dismiss="modal"]').on('click',function(){
-        $('.video-mo-02').children('iframe')[0].src = srcOld;
-        $('.video-mo-02').css('opacity','0');
-    });
-    
     
 
     /*[ Fixed Header ]
@@ -211,7 +193,25 @@
             $(this).addClass('is-actived');
         });
     });
+	
+	/*[ Google Calendar Modal ]
+	===========================================================*/
+	function openCalendar(url) {
+		$("#calendarIframe").attr("src", url);
+	}
 
+	// Run script after the document is fully loaded
+	$(document).ready(function () {
+		// Open modal and load Google Calendar
+		$('[data-target="#modal-calendar"]').on("click", function () {
+			openCalendar("https://calendar.google.com/calendar/appointments/schedules/AcZssZ35Fj0vgpJ5HiFwsxTE2jnN9o4hoVkzW6d7RY3GfUWUku_1DDOJfchPHmXYv_AwKG4C-Fsjo1Yo?gv=true");
+		});
+
+		// Clear iframe when modal is closed to prevent issues
+		$("#modal-calendar").on("hidden.bs.modal", function () {
+			$("#calendarIframe").attr("src", "");
+		});
+	});
     
 
 })(jQuery);
