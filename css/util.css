@@ -3021,12 +3021,11 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 }
 
 .tit7 {
-	font-family: Lora;
+	font-family: LoraItalic;
 	font-weight: 500;
 	font-size: 22px;
 	line-height: 1.2;
-	color: #3A2E2A;
-	text-transform: uppercase;
+	color: white;
 	letter-spacing: 3px;
 }
 
