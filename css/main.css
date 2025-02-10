@@ -92,6 +92,10 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   src: url('../fonts/Karla/static/Karla-Regular.ttf'); 
 }
 @font-face {
+  font-family: KarlaItalic;
+  src: url('../fonts/Karla/static/Karla-Italic.ttf'); 
+}
+@font-face {
   font-family: KarlaBold;
   src: url('../fonts/Karla/static/Karla-Bold.ttf'); 
 }
@@ -1200,19 +1204,20 @@ input[type="date" i] {
 }
 
 .slick3-dots li button {
-  display: block;
-  color: transparent;
-  background-color: #cccccc;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 1px solid transparent;
-  background-clip: padding-box;
+	display: block;
+	color: rgba(0, 0, 0, 0.6); /* Slightly visible text */
+	background-color: rgba(204, 204, 204, 0.8); /* Less transparent */
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 1px solid #888888; /* Light gray border */
+	background-clip: padding-box;
+	font-size: 0;
 
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
 }
 
 
@@ -1230,13 +1235,16 @@ input[type="date" i] {
 /*[ Block1  ]
 ///////////////////////////////////////////////////////////
 */
-.blo1 img {}
+.awards img {width: 70%;}
 
 .awards {
 	width: 80%; 
-	margin-left: auto; 
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: auto;
 }
+
+
 
 /*[ Block5 -vFarid  ]
 ///////////////////////////////////////////////////////////
@@ -1341,23 +1349,10 @@ position: relative;
   .size2 {
   max-width: 280px;
 	}
-	.section-booking .col-md-6{
-		width: 50%;
-	}
-	.section-booking .col-lg-6{
-		width: 50%;
-	}
 }
 
 @media (max-width: 576px) {
-  .blo2 {
-    width: 100%;
-  }
-
-  .wrap-pic-blo2 {
-    width: 100%;
-    height: 364px;
-  }
+  
 
 }
 

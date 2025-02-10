@@ -2976,7 +2976,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 }
 
 .tit2 {
-	font-family: Karla;
+	font-family: KarlaItalic;
 	font-size: 40px;
 	line-height: 1.3;
 	color: #5C1417 ;
@@ -3896,22 +3896,42 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 
 	.bo-none-md {border: none;}
 	
-	.subtit1 {font-size: 13px; text-align: center;}
+	.subtit1 {font-size: 17px !important; text-align: center;}
 	
 	.section-welcome .col-md-4 {margin-bottom: 20px;}
 	
-	.p-t-60 { padding-top: 20px;}
-	.p-b-80 { padding-bottom: 20px;}
+	.p-t-60 { padding-top: 15px;}
+	.p-b-60 { padding-bottom: 15px;}
+	.p-b-80 { padding-bottom: 15px;}
 	.tit2 {font-size: 30px;}
 	
-	.txt5 {font-size: 13px;}
+	.content-intro .txt5 {font-size: 17px;}
+	.bg9 .txt5 {font-size: 15px;}
 	.size17 {width: 200px;}
 	.size18 {width: 100px;}
 	.tit3 {font-size:30px;}
-	.size6 {width: 170px;height: 44px;}
+	.size6 {width: 230px;height: 44px;}
 	.txt3 {font-size: 16px;}
-	
-	
+	.tx11 {font-size: 16px;}
+	.wrap-text-blo1.p-t-35 {padding-top: 15px;}
+	.content-video.p-t-225 {padding-top:150px;}	
+	.content-video.p-b-250 {padding-bottom:150px;}
+	.tit3.m-b-35{margin-bottom:15px;}
+	.section-welcome .awards {margin-right: auto;}
+	.size14 {width: 90px;height:90px;}
+	.wrap-content-slide3.p-b-50{padding-bottom:15px;}
+	.wrap-content-slide3.p-t-50{padding-top:15px;}
+	.content-intro.p-b-60{padding-bottom:15px;}
+	.wrap-pic-booking{padding-top:15px;}
+	.wrap-pic-booking.size2 {max-width: 200px;}
+	.section-intro .p-t-225 {padding-top:150px;}	
+	.section-intro .p-b-250 {padding-bottom:150px;}
+	.item-slick1 {height: 400px !important;}
+	.section-welcome .p-around8 {width: 85%; margin: auto;}
+	.txtlink {padding-bottom: 15px;}
+	.section-booking button {margin-top:15px;}	
+	.p-t-40 {padding-top:15px;}
+	.p-t-45 {padding-top:15px;}
 }
 
 
@@ -3953,4 +3973,36 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	.tit4 {font-size: 36px;}
 	.size18 {width: 80px;}
 	.txt11 {font-size: 11px;}
+	.item-slick1 {height: 400px !important;}
+	.blo2 {
+    width: 100%;
+  }
+
+  .wrap-pic-blo2 {
+    width: 100%;
+    height: 364px;
+  }
+  
+  .subtit1 {
+	  font-size: 15px !important;
+  }
+  .txt3 {
+    font-size: 14px;
+  }
+  .txt12 {
+    font-size: 14px;
+  }
+  .tit6 {
+    font-size: 24px;
+  }
+   .tit3 {
+    font-size: 24px;
+  }
+  .tit7 {font-size: 18px;}
+  .tit2 {font-size: 18px;}
+  .content-video.p-t-225 {padding-top:80px;}	
+	.content-video.p-b-250 {padding-bottom:80px;}
+	.section-intro .p-t-225 {padding-top:80px;}	
+	.section-intro .p-b-250 {padding-bottom:80px;}
+	
 }
