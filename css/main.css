@@ -1235,7 +1235,7 @@ input[type="date" i] {
 /*[ Block1  ]
 ///////////////////////////////////////////////////////////
 */
-.awards img {width: 60%;}
+.awards img {width: 60%;max-width: 100%; height: auto; }
 
 .awards {
 	width: 100%; 
@@ -1252,6 +1252,66 @@ input[type="date" i] {
 .footer-content a {
     margin-left: 15px;
 }
+
+/*[ Language Icons -vFarid  ]
+///////////////////////////////////////////////////////////
+*/
+.flag-icon {
+  width: 20px; /* You can adjust this size */
+  height: auto;
+  margin-right: 8px;
+}
+
+.language-switcher {
+  position: relative;
+  display: inline-block;
+}
+
+.language-dropdown {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.language-dropdown .arrow-down {
+  margin-left: 5px;
+}
+
+.language-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  min-width: 120px;
+}
+
+.language-options li {
+  padding: 8px 10px;
+}
+
+.language-options li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.language-options flag-icon:hover {
+	background-color: white;
+}
+
+.language-options li a:hover {
+  color: #5C1417;
+  text-decoration: none;
+}
+
+.language-switcher:hover .language-options {
+  display: block;
+}
+
 
 
 /*[ Block5 -vFarid  ]
