@@ -1235,7 +1235,10 @@ input[type="date" i] {
 /*[ Block1  ]
 ///////////////////////////////////////////////////////////
 */
-.awards img {width: 60%;max-width: 100%; height: auto; }
+
+.wrap-welcome-blo2{max-width: 60%; margin:auto;}
+
+.awards img {max-width: 100%; height: auto; }
 
 .awards {
 	width: 100%; 
@@ -1259,7 +1262,6 @@ input[type="date" i] {
 .flag-icon {
   width: 20px; /* You can adjust this size */
   height: auto;
-  margin-right: 8px;
 }
 
 .language-switcher {
@@ -1274,7 +1276,7 @@ input[type="date" i] {
 }
 
 .language-dropdown .arrow-down {
-  margin-left: 5px;
+  margin-left: 0px;
 }
 
 .language-options {

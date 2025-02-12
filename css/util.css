@@ -4005,6 +4005,9 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	.section-intro .p-t-225 {padding-top:80px;}	
 	.section-intro .p-b-250 {padding-bottom:80px;}
 	
+	.social .m-l-21 {margin-left: 15px;}
+	.social .m-l-33 {margin-left: 21px;}
+	
 }
 
 @media (max-width: 360px) {
