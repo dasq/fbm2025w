@@ -3093,10 +3093,20 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 	font-family: Lora, 'Source Sans Pro';
 	font-weight: 400;
 	font-size: 12px;
-	color: #22222;
+	color: #3A2E2A;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
+
+.txt4l {
+	font-family: Lora, 'Source Sans Pro';
+	font-weight: 400;
+	font-size: 16px;
+	color: #3A2E2A;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
 
 .txt5 {
 	font-family: KarlaBold;
@@ -3163,7 +3173,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 	font-family: Lora, 'Source Sans Pro';
 	font-weight: 400;
 	font-size: 15px;
-	color: #22222;
+	color: #3A2E2A;
 	line-height: 1.7;
 }
 
@@ -3219,6 +3229,21 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 	font-size: 12px;
 	color: white;
 }
+
+.txtfaq {
+    font-family: Lora, 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 16px;
+    color: #3A2E2A !important;
+}
+
+.txtfaq:hover,
+.txtfaq:active,
+.txtfaq:focus,
+.txtfaq:visited {
+    color: #5C1417 !important;
+}
+
 
 .txt17 {
 	font-family: Lora, 'Source Sans Pro';
@@ -3694,11 +3719,11 @@ EFFECT   EFFECT   EFFECT   EFFECT   EFFECT   EFFECT  EFFECT
     transition: all 0.6s;
 }
 .hov-img-zoom:hover img {
-	-webkit-transform: scale(1.1);
-  	-moz-transform: scale(1.1);
-  	-ms-transform: scale(1.1);
-  	-o-transform: scale(1.1);
-	transform: scale(1.1);
+	-webkit-transform: scale(1.05);
+  	-moz-transform: scale(1.05);
+  	-ms-transform: scale(1.05);
+  	-o-transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 

@@ -920,6 +920,21 @@ input[type="date" i] {
   right: auto;
 }
 
+/* Slick vFarid */
+
+.item1-slick1 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  min-height: 545px;
+}
+.item1-slick1 .flex-col-c-m {
+	width: 100%;
+	min-height: 545px;
+}
+  
+
 @media (max-width: 576px) {
   .next-slick1 {
     right: 15px;
@@ -1068,6 +1083,19 @@ input[type="date" i] {
   transform: scale(1.1);
 }
 
+/*[ Play Button over Cover ]
+///////////////////////////////////////////////////////////
+*/
+.blo1.position-relative {
+    position: relative;
+}
+
+.btn-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 /*[ Intro ]
@@ -1276,7 +1304,7 @@ input[type="date" i] {
 }
 
 .language-dropdown .arrow-down {
-  margin-left: 0px;
+  margin-left: 4px;
 }
 
 .language-options {
@@ -1452,7 +1480,7 @@ position: relative;
 }
 
 .section-impressions > .title-review > .tit2 {
-	color: #222222;
+	color: #3A2E2A2;
 }
 
 .bg-gradient {
@@ -1481,7 +1509,7 @@ position: relative;
 }
 
 .bg-gradient > .title-review > .tit2 {
-	color: #222222;
+	color: #3A2E2A2;
 }
 
 
