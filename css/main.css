@@ -1090,7 +1090,7 @@ input[type="date" i] {
     position: relative;
 }
 
-.btn-play {
+.album-btn-play {
     position: absolute;
     top: 50%;
     left: 50%;
