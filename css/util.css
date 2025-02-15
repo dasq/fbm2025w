@@ -3193,6 +3193,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 	letter-spacing: 2px;
 	text-decoration: underline;
 	text-underline-offset: 5px;
+	text-align: center;
 }
 
 .txt14 {
@@ -3700,7 +3701,8 @@ EFFECT   EFFECT   EFFECT   EFFECT   EFFECT   EFFECT  EFFECT
 	overflow: hidden;
 }
 .wrap-cir-pic img {
-	width: 100%;
+	width: 110px;
+	height: auto;
 }
 
 
@@ -3862,6 +3864,11 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 */
 @media (max-width: 1200px) {
 	.p-l-0-xl {padding-left: 0;}
+	
+	.section-welcome .col-md-4 img {width: 198px !important;}
+	.wrap-welcome-blo2 { max-width: 100% !important;}
+	#fbm-portrait { width: 300px;}
+	#fbm-tedx { width: 300px !important;}
 
 }
 
@@ -3906,13 +3913,14 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 		padding-right: 8px;
 		padding-left: 8px;
 	}
+	#fbm-tedx { width: 250px !important;}
 }
 
 
 /*[ MD ]
 -----------------------------------------------------------
 */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.w-full-md {width: 100%}
 	.p-r-0-md {padding-right: 0;}
 	.p-l-0-md {padding-left: 0;}
@@ -3952,11 +3960,17 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	.section-intro .p-t-225 {padding-top:150px;}	
 	.section-intro .p-b-250 {padding-bottom:150px;}
 	.item-slick1 {height: 400px !important;}
-	.section-welcome .p-around8 {width: 85%; margin: auto;}
+	.section-welcome .p-around8 {width: 100%; margin: auto;}
 	.txtlink {padding-bottom: 15px;}
 	.section-booking button {margin-top:15px;}	
 	.p-t-40 {padding-top:15px;}
 	.p-t-45 {padding-top:15px;}
+	
+	.section-welcome .col-md-4 img {width: 519px !important;}
+	.wrap-text-blo1 {width: 519px; margin-left:auto; margin-right: auto;}
+	
+	#fbm-portrait-mobile { width: 300px;}
+	.wrap-cir-pic img {width: 82px;}
 }
 
 
@@ -4032,6 +4046,10 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	
 	.social .m-l-21 {margin-left: 15px;}
 	.social .m-l-33 {margin-left: 21px;}
+	
+	.section-welcome .col-md-4 img {width: 320px !important;}
+	.wrap-text-blo1 {width: 320px; }
+	#fbm-portrait-mobile { width: 200px;}
 	
 }
 

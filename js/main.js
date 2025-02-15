@@ -92,20 +92,21 @@
 
     /*[ Play video 01]
     ===========================================================*/
-    var srcOld = $('.video-mo-01').children('iframe').attr('src');
+    var srcOld = $('.video-mo-01').children('iframe').attr('data-src');
 
-    $('[data-target="#modal-video-01"]').on('click',function(){
-        $('.video-mo-01').children('iframe')[0].src += "&autoplay=1";
+	$('[data-target="#modal-video-01"]').on('click', function() {
+		var iframe = $('.video-mo-01').children('iframe');
+		iframe.attr('src', iframe.attr('data-src')); // Load the video URL only when the modal is opened
+		setTimeout(function() {
+			$('.video-mo-01').css('opacity', '1');
+		}, 300);
+	});
 
-        setTimeout(function(){
-            $('.video-mo-01').css('opacity','1');
-        },300);      
-    });
-
-    $('[data-dismiss="modal"]').on('click',function(){
-        $('.video-mo-01').children('iframe')[0].src = srcOld;
-        $('.video-mo-01').css('opacity','0');
-    });
+	$('[data-dismiss="modal"]').on('click', function() {
+		var iframe = $('.video-mo-01').children('iframe');
+		iframe.attr('src', srcOld); // Reset the iframe src to stop the video
+		$('.video-mo-01').css('opacity', '0');
+	});
     
 
     /*[ Fixed Header ]
@@ -211,6 +212,27 @@
 		$("#modal-calendar").on("hidden.bs.modal", function () {
 			$("#calendarIframe").attr("src", "");
 		});
+	});
+	
+	// Function to load the video iframe dynamically when the modal is opened
+	function loadVideo() {
+		var modalBody = document.getElementById('video-container');
+		var iframe = document.createElement('iframe');
+		iframe.width = "100%";
+		iframe.height = "315";
+		iframe.src = "https://www.youtube.com/embed/videoseries?si=gjAYf9yE-2g0AMwP&amp;list=PL6i964kxZ6uNYnvabEwdPgFGxqFFq-j0c"; // Replace with your video playlist ID
+		iframe.frameBorder = "0";
+		iframe.allowFullscreen = true;
+
+		// Remove the thumbnail and insert the iframe
+		modalBody.innerHTML = '';
+		modalBody.appendChild(iframe);
+	}
+
+	// Reset the video when the modal is closed
+	$('#modal-video-01').on('hidden.bs.modal', function () {
+		var modalBody = document.getElementById('video-container');
+		modalBody.innerHTML = ''; // Remove the iframe
 	});
     
 

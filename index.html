@@ -185,7 +185,7 @@
 			<div class="slick1 slick-slider">
 				<div class="item-slick1 item1-slick1" style="background-image: url(images/background/faridbenmiles.jpg);">
 					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-10">
-						<h1 class="caption2-slide1 tit1 t-center animated visible-false m-b-0" data-appear="fadeInUp">
+						<h1 class="caption2-slide1 tit1 t-center m-b-0">
 							<b>Farid Ben Miles</b>
 						</h1>
 						<!--<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
@@ -194,13 +194,9 @@
 						<p class="subtit1">
 							Passionate about creating music that connects cultures, generations, and hearts.
 						</p>
-						<div class="wrap-btn-slide1 animated visible-false p-t-20" data-appear="zoomIn">
-							<!-- Button1 
-							<a href="contact.html" class="btn1 flex-c-m size6 txt3 trans-0-4">
-								Get in touch
-							</a>-->
+						<div class="p-t-20">
 							<div class="d-flex justify-content-center align-items-center">
-								<button class="btn1 flex-c-m size6 txt3 trans-0-4" data-toggle="modal" data-target="#modal-calendar">
+								<button class="btn1 flex-c-m size6 txt3 " data-toggle="modal" data-target="#modal-calendar">
 									Let's get in touch <i class="m-l-10 fas fa-calendar-alt"></i>
 								</button>
 							</div>
@@ -422,7 +418,7 @@
 									<!-- Mobile Image (Visible only on small screens) -->
 									<div class="awards d-md-none m-b-15 rounded-circle">
 										<div class="blo1 bo-rad-5 rounded-circle">
-											<img src="images/photos/faridbenmiles-portrait-square.jpg" alt="faridbenmiles-portrait" class="rounded-circle">
+											<img id="fbm-portrait-mobile" src="images/photos/faridbenmiles-portrait-square.jpg" alt="faridbenmiles-portrait" class="rounded-circle">
 										</div>  
 									</div>
 
@@ -456,7 +452,7 @@
 								<div class="wrap-welcome-blo2 p-t-35">
 									<div class="awards">
 										<div class="blo1 bo-rad-5 hov-img-zoom">
-											<a href="about.html"><img src="images/photos/faridbenmiles-portrait-square.jpg" alt="faridbenmiles-portrait" class="blo1 bo-rad-5"></a>
+											<a href="about.html"><img id="fbm-portrait" src="images/photos/faridbenmiles-portrait-square.jpg" alt="faridbenmiles-portrait" class="blo1 bo-rad-5"></a>
 										</div>	
 									</div>
 								</div>
@@ -591,7 +587,7 @@
 									<!-- Mobile Image (Visible only on small screens) -->
 									<div class="awards d-none d-md-none">
 										<div class="blo1 bo-rad-5 ">
-											<img src="images/photos/fbm-tedx-small.jpg" alt="faridbenmiles-portrait">
+											<img id="fbm-tedx-mobile" src="images/photos/fbm-tedx-small.jpg" alt="faridbenmiles-portrait">
 										</div>	
 									</div>
 
@@ -622,7 +618,7 @@
 								<div class="wrap-welcome-blo2 p-t-35">
 									<div class="awards">
 										<div class="blo1 bo-rad-5 hov-img-zoom">
-											<a href="contact.html" class="txt14 c-white " data-toggle="modal" data-target="#modal-calendar"><img src="images/photos/fbm-tedx-small.jpg" alt="faridbenmiles-portrait" class="blo1 bo-rad-5"></a>
+											<a href="contact.html" class="txt14 c-white " data-toggle="modal" data-target="#modal-calendar"><img id="fbm-tedx" src="images/photos/fbm-tedx-small.jpg" alt="faridbenmiles-portrait" class="blo1 bo-rad-5"></a>
 										</div>	
 									</div>
 								</div>
@@ -821,8 +817,7 @@
 			<div class="wrap-video-mo-01">
 				<div class="w-full wrap-pic-w op-0-0"><img src="images/icons/video-16-9.jpg" alt="IMG-video-background"></div>
 				<div class="video-mo-01">
-					<!-- <iframe src="https://www.youtube.com/embed/SbUtBtzo9Qg?rel=0&amp;showinfo=0" allowfullscreen></iframe>-->
-					<iframe src="https://www.youtube.com/embed/videoseries?si=gjAYf9yE-2g0AMwP&amp;list=PL6i964kxZ6uNYnvabEwdPgFGxqFFq-j0c" allowfullscreen></iframe>
+					<iframe data-src="https://www.youtube.com/embed/videoseries?si=gjAYf9yE-2g0AMwP&amp;list=PL6i964kxZ6uNYnvabEwdPgFGxqFFq-j0c" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
@@ -869,6 +864,8 @@
 	<script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<!-- Defer the loading of YouTube scripts -->
+	<script async defer src="https://www.youtube.com/iframe_api"></script>
 
 </body>
 </html>
