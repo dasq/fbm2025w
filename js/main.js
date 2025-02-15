@@ -90,7 +90,7 @@
     });
 
 
-    /*[ Play video 01]
+   	/*[ Play video 01]
     ===========================================================*/
     var srcOld = $('.video-mo-01').children('iframe').attr('data-src');
 
