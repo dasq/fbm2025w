@@ -922,6 +922,20 @@ input[type="date" i] {
   right: auto;
 }
 
+/* Banner Size vFarid */
+.home-banner{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  min-height: 90vh;
+}
+.home-banner .flex-col-c-m {
+	width: 100%;
+	min-height: 90vh;
+}
+
+
 /* Slick vFarid */
 
 .item1-slick1 {
