@@ -1,33 +1,31 @@
 (function ($) {
     "use strict";
 
-    /*[ Load Page ]
+    /*[ Load page ]
     ===========================================================*/
-    $(document).ready(function () {
-        $(".animsition").animsition({
-            inClass: 'fade-in',
-            outClass: 'fade-out',
-            inDuration: 1500,
-            outDuration: 800,
-            linkElement: '.animsition-link',
-            loading: true,
-            loadingParentElement: 'html',
-            loadingClass: 'animsition-loading-1',
-            loadingInner: '<div class="cp-spinner cp-meter"></div>',
-            timeout: false,
-            timeoutCountdown: 5000,
-            onLoadEvent: true,
-            browser: ['animation-duration', '-webkit-animation-duration'],
-            overlay: false,
-            overlayClass: 'animsition-overlay-slide',
-            overlayParentElement: 'html',
-            transition: function (url) {
-                window.location.href = url;
-            }
-        });
+    $(".animsition").animsition({
+        inClass: 'fade-in',
+        outClass: 'fade-out',
+        inDuration: 1500,
+        outDuration: 800,
+        linkElement: '.animsition-link',
+        loading: true,
+        loadingParentElement: 'html',
+        loadingClass: 'animsition-loading-1',
+        loadingInner: '<div class="cp-spinner cp-meter"></div>',
+        timeout: false,
+        timeoutCountdown: 5000,
+        onLoadEvent: true,
+        browser: ['animation-duration', '-webkit-animation-duration'],
+        overlay: false,
+        overlayClass: 'animsition-overlay-slide',
+        overlayParentElement: 'html',
+        transition: function (url) {
+            window.location.href = url;
+        }
     });
 
-    /*[ Back to Top ]
+    /*[ Back to top ]
     ===========================================================*/
     var windowH = $(window).height() / 2;
 
@@ -72,77 +70,68 @@
 
     /*[ Play Video - Optimized Lazy Loading ]
     ===========================================================*/
-    document.addEventListener("DOMContentLoaded", function () {
-        var videoModal = $('#modal-video-01');
+    $('#modal-video-01').on('shown.bs.modal', function () {
+        var modalBody = document.getElementById('video-container');
+        if (!modalBody.querySelector('iframe')) {
+            var iframe = document.createElement('iframe');
+            iframe.width = "100%";
+            iframe.height = "315";
+            iframe.src = "https://www.youtube.com/embed/videoseries?si=gjAYf9yE-2g0AMwP&amp;list=PL6i964kxZ6uNYnvabEwdPgFGxqFFq-j0c"; // Replace with your actual playlist ID
+            iframe.frameBorder = "0";
+            iframe.allowFullscreen = true;
+            modalBody.appendChild(iframe);
+        }
+    });
 
-        videoModal.on('shown.bs.modal', function () {
-            var modalBody = document.getElementById('video-container');
-            if (!modalBody.querySelector('iframe')) {
-                var iframe = document.createElement('iframe');
-                iframe.width = "100%";
-                iframe.height = "315";
-                iframe.src = "https://www.youtube.com/embed/videoseries?si=gjAYf9yE-2g0AMwP&amp;list=PL6i964kxZ6uNYnvabEwdPgFGxqFFq-j0c"; // Replace with your actual playlist ID
-                iframe.frameBorder = "0";
-                iframe.allowFullscreen = true;
-                iframe.loading = "lazy"; // Improves performance
-                modalBody.appendChild(iframe);
-            }
-        });
-
-        videoModal.on('hidden.bs.modal', function () {
-            document.getElementById('video-container').innerHTML = ''; // Clear iframe on close
-        });
+    $('#modal-video-01').on('hidden.bs.modal', function () {
+        document.getElementById('video-container').innerHTML = ''; // Clear iframe on close
     });
 
     /*[ Fixed Header ]
     ===========================================================*/
-    $(document).ready(function () {
-        var header = $('header');
-        var logo = $(header).find('.logo img');
-        var linkLogo1 = $(logo).attr('src');
-        var linkLogo2 = $(logo).data('logofixed');
+    var header = $('header');
+    var logo = $(header).find('.logo img');
+    var linkLogo1 = $(logo).attr('src');
+    var linkLogo2 = $(logo).data('logofixed');
 
-        $(window).on('scroll', function () {
-            if ($(this).scrollTop() > 5) {
-                $(logo).attr('src', linkLogo2);
-                $(header).addClass('header-fixed');
-            } else {
-                $(header).removeClass('header-fixed');
-                $(logo).attr('src', linkLogo1);
-            }
-        });
+    $(window).on('scroll', function () {
+        if ($(this).scrollTop() > 5) {
+            $(logo).attr('src', linkLogo2);
+            $(header).addClass('header-fixed');
+        } else {
+            $(header).removeClass('header-fixed');
+            $(logo).attr('src', linkLogo1);
+        }
     });
 
     /*[ Show/Hide Sidebar ]
     ===========================================================*/
-    $(document).ready(function () {
-        $('body').append('<div class="overlay-sidebar trans-0-4"></div>');
-        var ovlSideBar = $('.overlay-sidebar');
-        var sidebar = $('.sidebar');
+    $('body').append('<div class="overlay-sidebar trans-0-4"></div>');
+    var ovlSideBar = $('.overlay-sidebar');
+    var sidebar = $('.sidebar');
 
-        $('.btn-show-sidebar').on('click', function () {
-            sidebar.addClass('show-sidebar');
-            ovlSideBar.addClass('show-overlay-sidebar');
-        });
+    $('.btn-show-sidebar').on('click', function () {
+        sidebar.addClass('show-sidebar');
+        ovlSideBar.addClass('show-overlay-sidebar');
+    });
 
-        $('.btn-hide-sidebar, .overlay-sidebar').on('click', function () {
-            sidebar.removeClass('show-sidebar');
-            ovlSideBar.removeClass('show-overlay-sidebar');
-        });
+    $('.btn-hide-sidebar, .overlay-sidebar').on('click', function () {
+        sidebar.removeClass('show-sidebar');
+        ovlSideBar.removeClass('show-overlay-sidebar');
     });
 
     /*[ Isotope Filtering ]
     ===========================================================*/
+    var $topeContainer = $('.isotope-grid');
+
+    $('.filter-tope-group').on('click', 'button', function () {
+        var filterValue = $(this).attr('data-filter');
+        $topeContainer.isotope({ filter: filterValue });
+        $('.label-gallery').removeClass('is-actived');
+        $(this).addClass('is-actived');
+    });
+
     $(window).on('load', function () {
-        var $topeContainer = $('.isotope-grid');
-
-        $('.filter-tope-group').on('click', 'button', function () {
-            var filterValue = $(this).attr('data-filter');
-            $topeContainer.isotope({ filter: filterValue });
-            $('.label-gallery').removeClass('is-actived');
-            $(this).addClass('is-actived');
-        });
-
         $topeContainer.each(function () {
             $(this).isotope({
                 itemSelector: '.isotope-item',
@@ -157,14 +146,12 @@
 
     /*[ Google Calendar Modal ]
     ===========================================================*/
-    $(document).ready(function () {
-        $('[data-target="#modal-calendar"]').on("click", function () {
-            $("#calendarIframe").attr("src", "https://calendar.google.com/calendar/appointments/schedules/AcZssZ35Fj0vgpJ5HiFwsxTE2jnN9o4hoVkzW6d7RY3GfUWUku_1DDOJfchPHmXYv_AwKG4C-Fsjo1Yo?gv=true");
-        });
+    $('[data-target="#modal-calendar"]').on("click", function () {
+        $("#calendarIframe").attr("src", "https://calendar.google.com/calendar/appointments/schedules/AcZssZ35Fj0vgpJ5HiFwsxTE2jnN9o4hoVkzW6d7RY3GfUWUku_1DDOJfchPHmXYv_AwKG4C-Fsjo1Yo?gv=true");
+    });
 
-        $("#modal-calendar").on("hidden.bs.modal", function () {
-            $("#calendarIframe").attr("src", "");
-        });
+    $("#modal-calendar").on("hidden.bs.modal", function () {
+        $("#calendarIframe").attr("src", "");
     });
 
 })(jQuery);
