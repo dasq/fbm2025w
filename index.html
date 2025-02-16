@@ -33,6 +33,10 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<link rel="preload" as="image" href="images/background/faridbenmiles.webp" type="image/webp">
+<link rel="preload" as="image" href="css/images/background/faridbenmiles.webp" type="image/webp">
+
+
 </head>
 <body >
 
@@ -183,7 +187,7 @@
 	<section class="section-banner">
 		<div class="wrap-slick1">
 			<div class=" ">
-				<div class="home-banner" style="background-image: url(images/background/faridbenmiles.jpg);">
+				<div class="home-banner lazyload" data-bg="images/background/faridbenmiles.webp">
 					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-10">
 						<h1 class="caption2-slide1 tit1 t-center m-b-0">
 							<b>Farid Ben Miles</b>
@@ -864,6 +868,7 @@
 	<script  type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script src="js/lazysizes.js"></script>
 <!-- Defer the loading of YouTube scripts -->
 	<script  src="https://www.youtube.com/iframe_api"></script>
 
