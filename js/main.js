@@ -2,7 +2,7 @@
     "use strict";
 
     /*[ Load page ]
-    ===========================================================*/
+    ===========================================================
     $(".animsition").animsition({
         inClass: 'fade-in',
         outClass: 'fade-out',
@@ -23,7 +23,7 @@
         transition: function (url) {
             window.location.href = url;
         }
-    });
+    });*/
 
     /*[ Back to top ]
     ===========================================================*/
