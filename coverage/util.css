@@ -763,6 +763,8 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	#fbm-portrait-mobile { width: 300px;}
 	.wrap-cir-pic img {width: 82px;}
 	
+	.home-banner {height: 470px !important;)
+	
 }
 
 
@@ -842,6 +844,7 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	.section-welcome .col-md-4 img {width: 320px !important;}
 	.wrap-text-blo1 {width: 320px; }
 	#fbm-portrait-mobile { width: 200px;}
+	.home-banner {height: 352px !important;)
 	
 }
 
