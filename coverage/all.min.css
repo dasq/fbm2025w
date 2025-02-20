@@ -157,3 +157,27 @@
     font-weight: 900
 }
 
+.fa-play:before {
+    content: "\f04b"
+}
+
+.fa-facebook:before {
+    content: "\f09a"
+}
+.fa-angle-left:before {
+    content: "\f104"
+}
+
+.fa-angle-right:before {
+    content: "\f105"
+}
+.fa-angle-double-up:before,.fa-angles-up:before {
+    content: "\f102"
+}
+.fa-caret-down:before {
+    content: "\f0d7"
+}
+
+.fa-times::before {
+    content: "\f00d";
+}

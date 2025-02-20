@@ -1,30 +1,6 @@
 (function ($) {
     "use strict";
-
-    /*[ Load page ]
-    ===========================================================
-    $(".animsition").animsition({
-        inClass: 'fade-in',
-        outClass: 'fade-out',
-        inDuration: 1500,
-        outDuration: 800,
-        linkElement: '.animsition-link',
-        loading: true,
-        loadingParentElement: 'html',
-        loadingClass: 'animsition-loading-1',
-        loadingInner: '<div class="cp-spinner cp-meter"></div>',
-        timeout: false,
-        timeoutCountdown: 5000,
-        onLoadEvent: true,
-        browser: ['animation-duration', '-webkit-animation-duration'],
-        overlay: false,
-        overlayClass: 'animsition-overlay-slide',
-        overlayParentElement: 'html',
-        transition: function (url) {
-            window.location.href = url;
-        }
-    });*/
-
+	
     /*[ Back to top ]
     ===========================================================*/
     var windowH = $(window).height() / 2;
@@ -35,37 +11,6 @@
 
     $('#myBtn').on("click", function () {
         $('html, body').animate({ scrollTop: 0 }, 300);
-    });
-
-    /*[ Select ]
-    ===========================================================*/
-    $(".selection-1").select2({
-        minimumResultsForSearch: 20,
-        dropdownParent: $('#dropDownSelect1')
-    });
-
-    /*[ Daterangepicker ]
-    ===========================================================*/
-    $('.my-calendar').daterangepicker({
-        "singleDatePicker": true,
-        "showDropdowns": true,
-        locale: {
-            format: 'DD/MM/YYYY'
-        }
-    });
-
-    var isClick = 0;
-    $(window).on('click', function () { isClick = 0; });
-
-    $('.btn-calendar').on('click', function (e) {
-        e.stopPropagation();
-        isClick = isClick === 1 ? 0 : 1;
-        if (isClick) $('.my-calendar').focus();
-    });
-
-    $('.my-calendar, .daterangepicker').on('click', function (e) {
-        e.stopPropagation();
-        isClick = 1;
     });
 
     /*[ Play Video - Optimized Lazy Loading ]
@@ -118,30 +63,6 @@
     $('.btn-hide-sidebar, .overlay-sidebar').on('click', function () {
         sidebar.removeClass('show-sidebar');
         ovlSideBar.removeClass('show-overlay-sidebar');
-    });
-
-    /*[ Isotope Filtering ]
-    ===========================================================*/
-    var $topeContainer = $('.isotope-grid');
-
-    $('.filter-tope-group').on('click', 'button', function () {
-        var filterValue = $(this).attr('data-filter');
-        $topeContainer.isotope({ filter: filterValue });
-        $('.label-gallery').removeClass('is-actived');
-        $(this).addClass('is-actived');
-    });
-
-    $(window).on('load', function () {
-        $topeContainer.each(function () {
-            $(this).isotope({
-                itemSelector: '.isotope-item',
-                percentPosition: true,
-                animationEngine: 'best-available',
-                masonry: {
-                    columnWidth: '.isotope-item'
-                }
-            });
-        });
     });
 
     /*[ Google Calendar Modal ]

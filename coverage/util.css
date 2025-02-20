@@ -763,7 +763,26 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	#fbm-portrait-mobile { width: 300px;}
 	.wrap-cir-pic img {width: 82px;}
 	
-	.home-banner {height: 470px !important;)
+	.home-banner {height: 470px !important;}
+	.section-welcome .col-md-4 {
+		width: 600px !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.btn4 {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.d-md-none {
+        display:block!important;
+    }
+	.d-md-none {
+        display:block!important;
+    }
+	.d-md-block {
+        display:none!important;
+    }
+	#fbm-tedx-mobile {width: 200px;}
 	
 }
 

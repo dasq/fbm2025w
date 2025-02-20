@@ -1,92 +1,4 @@
-/*------------------------------------------------------------------
-Project:  Pato
-Version:  
-Last change:  
-Assigned to:  Kevin Nguyen
-Primary use:  Company
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[LAYOUT]
 
-* body
-  + Header / header
-  + Page Content / .page-content .name-page
-        + Section Layouts / section .name-section
-        ...
-  + Footer / footer
-
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[COLOR CODES]
-
-# Text Color      :  
-# Primary Color 01:  
-# Primary Color 02:   
-# Primary Color 03:  
-
-------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[TYPOGRAPHY]
-
-Body            : 16px/1.6 '', Arial, sans-serif;
-Title           : 18px/1.6 '', Arial, sans-serif;
-Paragrap        : 18px/1.6 '', Arial, sans-serif;
-Input, textarea : 14px/1.6 '', Arial, sans-serif;
--------------------------------------------------------------------*/
-
-
-
-/*[ FONT ]
-///////////////////////////////////////////////////////////
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-
-@import url('https://fonts.googleapis.com/css?family=Courgette');
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
-
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
-
-@font-face {
-  font-family: Montserrat-Regular;
-  src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-Bold;
-  src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
-}
-
-@font-face {
-  font-family: Courgette-Regular;
-  src: url('../fonts/courgette/Courgette-Regular.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
-} 
-
-@font-face {
-  font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-Light;
-  src: url('../fonts/poppins/Poppins-Light.ttf'); 
-}
-
-@font-face {
-  font-family: NotoSans-Regular;
-  src: url('../fonts/notosans/NotoSans-Regular.ttf'); 
-}
-*/
 @font-face {
   font-family: Karla;
   src: url('../fonts/Karla/static/Karla-Regular.ttf'); 
@@ -110,6 +22,13 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 @font-face {
   font-family: LoraItalic;
   src: url('../fonts/Lora/static/Lora-Italic.ttf'); 
+}
+
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/font-awesome-6.0.0-beta3/fa-solid-900.woff2') format('woff2');
 }
 
 
