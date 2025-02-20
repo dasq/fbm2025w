@@ -181,3 +181,7 @@
 .fa-times::before {
     content: "\f00d";
 }
+
+.fa-caret-right::before {
+    content: "\f0da";
+}

@@ -10,12 +10,24 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="coverage/bootstrap.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="coverage/all.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="coverage/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="coverage/slick.css">
 
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="coverage/util.css">
+	<link rel="stylesheet" type="text/css" href="coverage/main.css">
+	
+<!--	<link rel="preload" as="image" href="images/background/faridbenmiles.webp" type="image/webp">
+	<link rel="preload" as="image" href="images/background/faridbenmiles-mobile.webp" type="image/webp">-->
+	
 <!--===============================================================================================
 	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">-->
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+
 <!--===============================================================================================
 	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">-->
 <!--===============================================================================================
@@ -24,21 +36,14 @@
 	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">-->
 <!--===============================================================================================
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">-->
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="coverage/slick.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="coverage/util.css">
-	<link rel="stylesheet" type="text/css" href="coverage/main.css">
+
 <!--===============================================================================================
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>-->
 
 <!--<link rel="stylesheet" type="text/css" href="css/styles.pure.css">-->
 
-<link rel="preload" as="image" href="images/background/faridbenmiles.webp" type="image/webp">
 </head>
-<body>
+<body >
 
 	<!-- Header -->
 	<header>
@@ -114,10 +119,10 @@
 
 					<!-- Social -->
 					<div class="social flex-w flex-l-m p-r-20">
-						<a href="https://instagram.com/faridbenmiles" target="_blank" aria-label="Go to my Instagram Page"><i class="fab fa-instagram m-r-13" aria-hidden="true"></i></a>
-						<a href="https://youtube.com/faridbenmiles" target="_blank" aria-label="Go to my YouTube Page"><i class="fab fa-youtube m-r-13 m-l-13" aria-hidden="true"></i></a>
-						<a href="https://bandcamp.com/faridbenmiles" target="_blank" aria-label="Go to my Bandcamp Page"><i class="fab fa-bandcamp m-r-13 m-l-13" aria-hidden="true"></i></a>
-						<a href="https://facebook.com/faridbenmiles" target="_blank" aria-label="Go to my Facebook Page"><i class="fab fa-facebook m-r-13 m-l-13" aria-hidden="true"></i></a>
+						<a href="https://instagram.com/faridbenmiles" target="_blank" aria-label="Go to my Instagram Page"><i class="fa fa-instagram m-r-13" aria-hidden="true"></i></a>
+						<a href="https://youtube.com/faridbenmiles" target="_blank" aria-label="Go to my YouTube Page"><i class="fa fa-youtube m-r-13 m-l-13" aria-hidden="true"></i></a>
+						<a href="https://bandcamp.com/faridbenmiles" target="_blank" aria-label="Go to my Bandcamp Page"><i class="fa fa-bandcamp m-r-13 m-l-13" aria-hidden="true"></i></a>
+						<a href="https://facebook.com/faridbenmiles" target="_blank" aria-label="Go to my Facebook Page"><i class="fa fa-facebook m-r-13 m-l-13" aria-hidden="true"></i></a>
 
 					<!-- Language Switcher -->
 					<div class="language-switcher m-l-13">
@@ -183,6 +188,7 @@
 		</ul>
 	</aside>
 	
+	
 	<!-- Title Page -->
 	<section class="section-slide">
 		<div class="wrap-slick1">
@@ -201,9 +207,23 @@
 		</div>
 	</section>
 	
+	<!-- Floating Table of Contents -->
+	<div id="toc-container">
+		<button id="toc-toggle">☰ Contents</button>
+		<nav id="floating-toc" class="hidden">
+			<ul>
+				<li><a href="#lessons-offer"><i class="fas fa-caret-right toc-icon"></i> Lessons Offer</a></li>
+				<li><a href="#student-projects"><i class="fas fa-caret-right toc-icon"></i> Student Projects</a></li>
+				<li><a href="#faq"><i class="fas fa-caret-right toc-icon"></i> FAQ</a></li>
+				<li><a href="#reviews"><i class="fas fa-caret-right toc-icon"></i> Reviews</a></li>
+				<li><a href="#get-in-touch"><i class="fas fa-caret-right toc-icon"></i> Get in Touch</a></li>
+			</ul>
+		</nav>
+	</div>
+
 	
 	<!-- Welcome -->
-	<section class="section-welcome bg1 p-t-00 p-b-0">
+	<section class="section-welcome bg1 p-t-00 p-b-0" id="lessons-offer">
 		<div class="">
 			<div class="content-intro p-t-40 p-b-80">
 				<div class="container">
@@ -224,14 +244,8 @@
 									<a href="private-guitar-lessons-in-dresden.html"><h2 class="txt5 color0-hov trans-0-4 m-b-13">
 										Private Guitar Lessons in Dresden
 									</h2></a>
-
-									<p class="m-b-20">
-										When I pick up my guitar, my goal is simple: to create something honest. 
-										Whether on stage or in a quiet setting, I want every note to carry meaning and every melody to tell a story. 
-										My music blends acoustic and electric influences, always aiming for a raw, emotional connection with the listener.
-									</p>
 									
-									 <div class="row key-points">
+									<div class="row key-points">
 										<div class="col-md-4">
 											<i class="fas fa-heart"></i>
 											<p>Emotion-Driven Performance</p>
@@ -245,6 +259,14 @@
 											<p>Live Concerts & Private Events</p>
 										</div>
 									</div>
+
+									<p class="descriptif">
+										When I pick up my guitar, my goal is simple: to create something honest. 
+										Whether on stage or in a quiet setting, I want every note to carry meaning and every melody to tell a story. 
+										My music blends acoustic and electric influences, always aiming for a raw, emotional connection with the listener.
+									</p>
+									
+									 
 									
 									<a href="private-guitar-lessons-in-dresden.html" class="txtlink">
 										Learn more about my guitar teaching in Dresden
@@ -277,12 +299,6 @@
 									<a href="private-online-guitar-lessons.html"><h2 class="txt5 color0-hov trans-0-4 m-b-13">
 										Online Private Guitar Lessons
 									</h2></a>
-
-									<p class="m-b-20">
-										Music has been a lifelong journey, and teaching allows me to share the joy it has given me. 
-										I guide my students not just in technique but in finding their own voice on the guitar. 
-										Whether in private lessons, online courses, or ensemble workshops, my approach is centered on making music an enriching experience for everyone.
-									</p>
 									
 									<div class="row key-points">
 										<div class="col-md-4">
@@ -298,6 +314,14 @@
 											<p>Step-by-step structured learning</p>
 										</div>
 									</div>
+
+									<p class="descriptif">
+										Music has been a lifelong journey, and teaching allows me to share the joy it has given me. 
+										I guide my students not just in technique but in finding their own voice on the guitar. 
+										Whether in private lessons, online courses, or ensemble workshops, my approach is centered on making music an enriching experience for everyone.
+									</p>
+									
+									
 									<a href="private-online-guitar-lessons.html" class="txtlink">
 										Discover more about my online guitar lessons
 									</a>
@@ -329,12 +353,6 @@
 									<a href="workshops-and-guitar-ensemble-in-dresden.html"><h2 class="txt5 color0-hov trans-0-4 m-b-13">
 										Workshops & Guitar Ensemble in Dresden
 									</h2></a>
-
-									<p class="m-b-20">
-										I see the guitar as a passport to different cultures. 
-										My compositions blend flamenco, jazz, blues, and world music, shaped by places I’ve been and stories I’ve encountered. 
-										Rather than fitting into a single genre, my music is about capturing moods, landscapes, and emotions—taking the listener on a journey beyond borders.
-									</p>
 									
 									<div class="row key-points">
 										<div class="col-md-4">
@@ -350,6 +368,12 @@
 											<p>Live performances & video storytelling</p>
 										</div>
 									</div>
+
+									<p class="descriptif">
+										I see the guitar as a passport to different cultures. 
+										My compositions blend flamenco, jazz, blues, and world music, shaped by places I’ve been and stories I’ve encountered. 
+										Rather than fitting into a single genre, my music is about capturing moods, landscapes, and emotions—taking the listener on a journey beyond borders.
+									</p>
 									
 									<a href="workshop-and-guitar-ensemble-in-dresden.html" class="txtlink">
 										Explore my workshop and guitar ensemble offers in Dresden
@@ -371,7 +395,7 @@
 	</section>
 	
 	<!-- Student Projects -->
-	<section class="bg9 ">
+	<section class="bg9 " id="student-projects">
 		<div class="">
 			<div class="container p-t-0 p-b-20">
 				<div class="row d-flex align-items-center">
@@ -457,137 +481,163 @@
 		</div>
 	</section>
 	
+	
 	<!-- FAQ -->
-	<section class="section-faq bg1 p-t-50 p-b-50">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="text-center m-b-40">
-                    <span class="tit2">Frequently Asked Questions</span>
-                    <h3 class="tit3 m-t-5">Everything you need to know</h3>
-                </div>
+	<section class="section-faq bg1 p-t-50 p-b-50" id="faq">
+		<div class="container">	
+			<div class="section-title t-center">
+				<span class="tit2 ">Frequently Asked Questions</span>
+				<h3 class="tit3 m-t-5">Everything you need to know</h3>
+			</div>
+			<div class="row d-flex align-items-center">
+				
+				<div class="col-md-6 p-t-45 p-b-30">
+											
+						<div class="blo1 p-around8 bo-rad-5">
+							
+							<div class="wrap-text-blo1 p-t-35">
+								
+								
 
-                <div class="accordion" id="faqAccordion text-center">
-                    <div class="card">
-                        <div class="card-header" id="faq1">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link txtfaq" type="button" data-toggle="collapse" data-target="#collapse1">
-                                    What level do I need to start lessons?
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapse1" class="collapse show" data-parent="#faqAccordion">
-                            <div class="card-body">
-                                Lessons are open to all levels, from complete beginners to advanced players.
-                            </div>
-                        </div>
-                    </div>
+								<dl class="accordion" id="faqAccordion text-center">
+									<div class="card">
+										<dt class="card-header" id="faq1">
+											<h5 class="mb-0">
+												<button class="btn btn-link txtfaq" type="button" data-toggle="collapse" data-target="#collapse1">
+													What level do I need to start lessons?
+												</button>
+											</h5>
+										</dt>
+										<dd id="collapse1" class="collapse show" data-parent="#faqAccordion">
+											<div class="card-body">
+												Lessons are open to all levels, from complete beginners to advanced players.
+											</div>
+										</dd>
+									</div>
 
-                    <div class="card">
-                        <div class="card-header" id="faq2">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed txtfaq" type="button" data-toggle="collapse" data-target="#collapse2">
-                                    Do I need to have my own guitar?
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapse2" class="collapse" data-parent="#faqAccordion">
-                            <div class="card-body">
-                                Yes, having your own instrument is ideal for practice, but I can help you choose one if needed.
-                            </div>
-                        </div>
-                    </div>
+									<div class="card">
+										<dt class="card-header" id="faq2">
+											<h5 class="mb-0">
+												<button class="btn btn-link collapsed txtfaq" type="button" data-toggle="collapse" data-target="#collapse2">
+													Do I need to have my own guitar?
+												</button>
+											</h5>
+										</dt>
+										<dd id="collapse2" class="collapse" data-parent="#faqAccordion">
+											<div class="card-body">
+												Yes, having your own instrument is ideal for practice, but I can help you choose one if needed.
+											</div>
+										</dd>
+									</div>
 
-                    <div class="card">
-                        <div class="card-header" id="faq3">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed txtfaq" type="button" data-toggle="collapse" data-target="#collapse3">
-                                    What styles of music do you teach?
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapse3" class="collapse" data-parent="#faqAccordion">
-                            <div class="card-body">
-                                My teaching is rooted in acoustic fingerstyle, but I incorporate jazz, blues, flamenco, and world music influences.
-                            </div>
-                        </div>
-                    </div>
+									<div class="card">
+										<dt class="card-header" id="faq3">
+											<h5 class="mb-0">
+												<button class="btn btn-link collapsed txtfaq" type="button" data-toggle="collapse" data-target="#collapse3">
+													What styles of music do you teach?
+												</button>
+											</h5>
+										</dt>
+										<dd id="collapse3" class="collapse" data-parent="#faqAccordion">
+											<div class="card-body">
+												My teaching is rooted in acoustic fingerstyle, but I incorporate jazz, blues, flamenco, and world music influences.
+											</div>
+										</dd>
+									</div>
 
-                    <div class="card">
-                        <div class="card-header" id="faq4">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed txtfaq" type="button" data-toggle="collapse" data-target="#collapse4">
-                                    How long does it take to learn guitar?
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapse4" class="collapse" data-parent="#faqAccordion">
-                            <div class="card-body">
-                                It depends on your goals and practice time! You can expect to play simple songs within a few weeks.
-                            </div>
-                        </div>
-                    </div>
+									<div class="card">
+										<dt class="card-header" id="faq4">
+											<h5 class="mb-0">
+												<button class="btn btn-link collapsed txtfaq" type="button" data-toggle="collapse" data-target="#collapse4">
+													How long does it take to learn guitar?
+												</button>
+											</h5>
+										</dt>
+										<dd id="collapse4" class="collapse" data-parent="#faqAccordion">
+											<div class="card-body">
+												It depends on your goals and practice time! You can expect to play simple songs within a few weeks.
+											</div>
+										</dd>
+									</div>
+								</dl>
+								
+							</div>
 
-                    <div class="card">
-                        <div class="card-header" id="faq5">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed txtfaq" type="button" data-toggle="collapse" data-target="#collapse5">
-                                    Can I take a trial lesson before committing?
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapse5" class="collapse" data-parent="#faqAccordion">
-                            <div class="card-body">
-                                Yes, I offer trial lessons so you can see if it’s the right fit for you.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="faq6">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed txtfaq" type="button" data-toggle="collapse" data-target="#collapse6">
-                                    Are lessons available for children?
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapse6" class="collapse" data-parent="#faqAccordion">
-                            <div class="card-body">
-                                Absolutely! I enjoy teaching children and tailor the lessons to their needs and motivation.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="faq7">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed txtfaq" type="button" data-toggle="collapse" data-target="#collapse7">
-                                    How do I book a lesson?
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapse7" class="collapse" data-parent="#faqAccordion">
-                            <div class="card-body">
-                                You can book directly via the website or get in touch for scheduling options.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-center m-t-40">
-					<button class="btn4 flex-c-m txt3 trans-0-4" data-toggle="modal" data-target="#modal-calendar">
-						Book a lesson <i class="m-l-10 fas fa-calendar-alt"></i>
-					</button>
+					</div>
 				</div>
+				
+				<div class="col-md-6 p-t-45 p-b-30 d-none d-md-block">
+						<div class="blo1 p-around8 bo-rad-5">
+							<div class="wrap-welcome-blo2 p-t-35">
+								<dl class="accordion" id="faqAccordion text-center">
 
-            </div>
-        </div>
-    </div>
-</section>
+									<div class="card">
+										<dt class="card-header" id="faq5">
+											<h5 class="mb-0">
+												<button class="btn btn-link collapsed txtfaq" type="button" data-toggle="collapse" data-target="#collapse5">
+													Can I take a trial lesson before committing?
+												</button>
+											</h5>
+										</dt>
+										<dd id="collapse5" class="collapse" data-parent="#faqAccordion">
+											<div class="card-body">
+												Yes, I offer trial lessons so you can see if it’s the right fit for you.
+											</div>
+										</dd>
+									</div>
+
+									<div class="card">
+										<dt class="card-header" id="faq6">
+											<h5 class="mb-0">
+												<button class="btn btn-link collapsed txtfaq" type="button" data-toggle="collapse" data-target="#collapse6">
+													Are lessons available for children?
+												</button>
+											</h5>
+										</dt>
+										<dd id="collapse6" class="collapse" data-parent="#faqAccordion">
+											<div class="card-body">
+												Absolutely! I enjoy teaching children and tailor the lessons to their needs and motivation.
+											</div>
+										</dd>
+									</div>
+
+									<div class="card">
+										<dt class="card-header" id="faq7">
+											<h5 class="mb-0">
+												<button class="btn btn-link collapsed txtfaq" type="button" data-toggle="collapse" data-target="#collapse7">
+													How do I book a lesson?
+												</button>
+											</h5>
+										</dt>
+										<dd id="collapse7" class="collapse" data-parent="#faqAccordion">
+											<div class="card-body">
+												You can book directly via the website or get in touch for scheduling options.
+											</div>
+										</dd>
+									</div>
+								</dl>
+							</div>
+						</div>
+				</div>
+		
+			</div>
+			<div class="d-flex justify-content-center m-t-40">
+				<a href="faq.html" class="txtlink">
+					Find more answers to the most frequently asked questions
+				</a>
+			</div>
+			<div class="d-flex justify-content-center m-t-40">
+				<button class="btn4 flex-c-m txt3 trans-0-4" data-toggle="modal" data-target="#modal-calendar">
+					Book a lesson <i class="m-l-10 fas fa-calendar-alt"></i>
+				</button>
+			</div>
+		</div>
+	</section>
+
 
 	
 	
-	<section class="bg9 ">
+	<section class="bg9 " id="reviews">
 		<div class="title-review t-center m-b-2 p-t-50">
 			<span class="tit2 t-center">What my students says</span>
 			<h3 class="tit3 t-center m-b-35 m-t-5">
@@ -693,7 +743,7 @@
 	
 
 	<!-- Booking -->
-	<section class="section-booking bg1 p-t-50 p-b-20">
+	<section class="section-booking bg1 p-t-50 p-b-20" id="get-in-touch">
 		<div class="container p-t-0 p-b-20">
 			<div class="row">
 				<div class="col align-items-center">
@@ -708,13 +758,6 @@
 									<h3 class="tit3 t-center m-b-35 m-t-5">
 										Rendez-vous
 									</h3>
-									
-									<!-- Mobile Image (Visible only on small screens) -->
-									<div class="awards d-none d-md-none">
-										<div class="blo1 bo-rad-5 ">
-											<img src="images/photos/fbm-tedx-small.jpg" alt="faridbenmiles-portrait">
-										</div>	
-									</div>
 
 									<p class="m-b-25">
 										Whether you're picking up the guitar for the first time or getting back into it, let's meet and talk about your goals. I'm grateful to have helped students of all ages and musical backgrounds find joy in playing, and I'd love to do the same for you. If music is in your heart, rest assured that I'm both qualified and motivated to guide you towards your goals.
@@ -950,29 +993,29 @@
 <!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+	<script defer type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
-	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script defer type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
+	<script defer type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
-	<script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
-	<script type="text/javascript" src="js/slick-custom.js"></script>
+	<script defer type="text/javascript" src="vendor/slick/slick.min.js"></script>
+	<script defer type="text/javascript" src="js/slick-custom.js"></script>
 <!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/parallax100/parallax100.js"></script>
 	<script type="text/javascript">
         $('.parallax100').parallax100();
 	</script>
+<!--===============================================================================================
+	<script  type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>-->
 <!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
+	<script  type="text/javascript" src="js/toc-float.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+<!-- Defer the loading of YouTube scripts 
+	<script defer src="https://www.youtube.com/iframe_api"></script>-->
 
 </body>
 </html>
