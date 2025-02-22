@@ -321,7 +321,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 .tit3 {
 	font-family: KarlaBold;
 	font-weight: 700;
-	font-size: 50px;
+	font-size: 48px;
 	line-height: 1;
 	color: #3A2E2A;
 	text-transform: uppercase;
@@ -663,6 +663,8 @@ EFFECT   EFFECT   EFFECT   EFFECT   EFFECT   EFFECT  EFFECT
 }
 
 
+
+
 /*=========================================================
 RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE 
 =========================================================*/
@@ -706,6 +708,7 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 		padding-left: 8px;
 	}
 	#fbm-tedx { width: 250px !important;}
+	.btn-show-sidebar {display: block !important;}
 }
 
 

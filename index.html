@@ -127,11 +127,11 @@
 					<!-- Language Switcher -->
 					<div class="language-switcher m-l-13">
 					  <a href="#" class="language-dropdown">
-						<img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/800px-Flag_of_the_United_Kingdom.svg.png" alt="English" class="flag-icon"> <i class="fas fa-caret-down submenu-icon arrow-down"></i> <!-- Default: English flag -->
+						<img src="images/logos/flag-eng" alt="English" class="flag-icon"> <i class="fas fa-caret-down submenu-icon arrow-down"></i> <!-- Default: English flag -->
 					  </a>
 					  <ul class="language-options">
-						<li><a href="/de/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png" alt="German" class="flag-icon"> Deutsch</a></li> <!-- German -->
-						<li><a href="/fr/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png" alt="French" class="flag-icon"> Français</a></li> <!-- French -->
+						<li><a href="/de/"><img src="images/logos/flag-deu" alt="German" class="flag-icon"> Deutsch</a></li> <!-- German -->
+						<li><a href="/fr/"><img src="images/logos/flag-fra" alt="French" class="flag-icon"> Français</a></li> <!-- French -->
 					  </ul>
 					</div>
 						
@@ -224,9 +224,22 @@
 		</div>
 	</section>
 	
+	<!-- Floating Table of Contents -->
+	<div id="toc-container">
+		<button id="toc-toggle">☰ Contents</button>
+		<nav id="floating-toc" class="hidden">
+			<ul>
+				<li><a href="#my-offer"><i class="fas fa-caret-right toc-icon"></i> What I Do</a></li>
+				<li><a href="#my-music"><i class="fas fa-caret-right toc-icon"></i> Watch</a></li>
+				<li><a href="#this-is-me"><i class="fas fa-caret-right toc-icon"></i> This is Me</a></li>
+				<li><a href="#awards"><i class="fas fa-caret-right toc-icon"></i> Awards</a></li>
+				<li><a href="#get-in-touch"><i class="fas fa-caret-right toc-icon"></i> Get in Touch</a></li>
+			</ul>
+		</nav>
+	</div>
 	
 	<!-- Welcome -->
-	<section class="section-welcome bg1 p-t-00 p-b-0">
+	<section class="section-welcome bg1 p-t-00 p-b-0" id="my-offer">
 		<div class="">
 			<div class="content-intro p-t-40 p-b-80">
 				<div class="container">
@@ -405,7 +418,7 @@
 	</section>
 	
 	<!-- Video -->
-	<section class="section-video parallax100" style="background-image: url(images/background/faridbenmiles-live-in-the-attic-dresden.jpg);">
+	<section class="section-video parallax100" style="background-image: url(images/background/faridbenmiles-live-in-the-attic-dresden.jpg);" id="my-music">
 		<div class="content-video t-center p-t-225 p-b-250">
 
 			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
@@ -421,7 +434,7 @@
 	</section>
 	
 	<!-- Intro -->
-	<section class="section-welcome bg1 p-t-0 p-b-0">
+	<section class="section-welcome bg1 p-t-0 p-b-0" id="this-is-me">
 		<div class="">
 			<div class="container p-t-0 p-b-20">
 				<div class="row d-flex align-items-center">
@@ -488,7 +501,7 @@
 	</section>
 	
 	
-	<section class="bg9 ">
+	<section class="bg9 " id="awards">
 		<div class="title-review t-center m-b-2 p-t-50">
 			<h3 class="tit3 t-center m-b-35 m-t-5">
 				Awards
@@ -590,7 +603,7 @@
 	
 
 	<!-- Booking -->
-	<section class="section-booking bg1 p-t-0 p-b-0">
+	<section class="section-booking bg1 p-t-0 p-b-0" id="get-in-touch">
 		<div class="">
 			<div class="container p-t-0 p-b-20">
 				<div class="row d-flex align-items-center">
@@ -885,6 +898,7 @@
 <!--===============================================================================================
 	<script  type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>-->
 <!--===============================================================================================-->
+	<script  type="text/javascript" src="js/toc-float.js"></script>
 	<script src="js/main.js"></script>
 <!-- Defer the loading of YouTube scripts 
 	<script defer src="https://www.youtube.com/iframe_api"></script>-->

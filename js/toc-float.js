@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const tocContainer = document.getElementById("toc-container");
     const toc = document.getElementById("floating-toc");
     const toggleBtn = document.getElementById("toc-toggle");
-    const banner = document.querySelector(".section-slide"); // Make sure class name is correct
+    const banner = document.querySelector(".section-slide, .section-banner"); // Make sure class name is correct
 
     if (!tocContainer || !banner || !toggleBtn || !toc) {
         console.error("One or more elements not found!");
