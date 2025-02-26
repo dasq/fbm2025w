@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const tocContainer = document.getElementById("toc-container");
     const toc = document.getElementById("floating-toc");
     const toggleBtn = document.getElementById("toc-toggle");
-    const banner = document.querySelector(".section-slide, .section-banner"); // Make sure class name is correct
+    const banner = document.querySelector(".section-slide, .section-banner"); // Ensure the selector matches
 
     if (!tocContainer || !banner || !toggleBtn || !toc) {
         console.error("One or more elements not found!");
@@ -26,14 +26,17 @@ document.addEventListener("DOMContentLoaded", function () {
         toc.classList.toggle("hidden");
         toggleBtn.classList.toggle("active");
 
+        // Remove focus after interaction to fix mobile button state
         setTimeout(() => {
-            this.blur(); // Removes focus after a short delay
-        }, 100);
+            toggleBtn.blur();
+        }, 10);
     });
 
-    // Ensure the button doesn't stay red on mobile touch
-    document.addEventListener("touchend", function () {
-        toggleBtn.blur();
+    // Fix for touch devices where button remains "active"
+    document.addEventListener("click", function (event) {
+        if (!toggleBtn.contains(event.target)) {
+            toggleBtn.classList.remove("active");
+        }
     });
 
     // Run on scroll
