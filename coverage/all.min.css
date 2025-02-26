@@ -185,3 +185,19 @@
 .fa-caret-right::before {
     content: "\f0da";
 }
+
+.fa-book::before {
+    content: "\f02d";
+}
+
+.fa-bookmark::before {
+    content: "\f02e";
+}
+
+.fa-scroll::before {
+    content: "\f70e";
+}
+
+.fa-chevron-down::before {
+    content: "\f078";
+}
