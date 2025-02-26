@@ -390,7 +390,7 @@ iframe {
   .social {padding-right: 0px;}
 
   .logo {
-    height: 45px;
+    height: 60px;
   }
   
   
@@ -490,7 +490,7 @@ iframe {
 
 @media (max-width: 576px) {
   .wrap_header {
-    height: 80px;
+    height: 100px;
   }
 
   .gallery-sidebar {
@@ -615,6 +615,7 @@ iframe {
 	min-height: 90vh;
 }
 
+.header-text {margin-top: 20vh; }
 
 /* Slick vFarid */
 

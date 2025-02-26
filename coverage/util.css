@@ -735,7 +735,11 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	
 	.content-intro .txt5 {font-size: 17px;}
 	.bg9 .txt5 {font-size: 15px;}
-	.size17 {width: 200px;}
+	.bg9 span.m-10 {margin: 5px;}
+	.bg9 .wrap-input-signup.m-10 {margin: 5px;}
+	.bg9 .wrap-input-signup .p-l-20 {padding-left: 10px;}
+	.bg9 button.m-10 {margin: 5px;}
+	.size17 {width: 180px;}
 	.size18 {width: 100px;}
 	.tit3 {font-size:30px;}
 	.size6 {width: 230px;height: 44px;}
@@ -787,6 +791,8 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
         display:none!important;
     }
 	#fbm-tedx-mobile {width: 200px;}
+	.header-text {margin-top: 210px !important; }
+
 	
 }
 
@@ -867,7 +873,10 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	.section-welcome .col-md-4 img {width: 320px !important;}
 	.wrap-text-blo1 {width: 320px; }
 	#fbm-portrait-mobile { width: 200px;}
-	.home-banner {height: 352px !important;)
+	.home-banner {height: 352px !important;}
+	.header-text {margin-top: 180px !important; }
+	.header-text h1 {margin-bottom: 5px;}
+	.header-text .p-t-20 {padding-top: 10px !important;}
 	
 }
 
