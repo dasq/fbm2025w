@@ -24,17 +24,23 @@ document.addEventListener("DOMContentLoaded", function () {
     // Toggle TOC open/close when clicking the button
     toggleBtn.addEventListener("click", function () {
         toc.classList.toggle("hidden");
-		this.blur(); // Removes focus after click
+        toggleBtn.classList.toggle("active");
+
+        setTimeout(() => {
+            this.blur(); // Removes focus after a short delay
+        }, 100);
     });
-	
+
+    // Ensure the button doesn't stay red on mobile touch
+    document.addEventListener("touchend", function () {
+        toggleBtn.blur();
+    });
+
     // Run on scroll
     window.addEventListener("scroll", toggleTOCVisibility);
 
     // Run once on page load
     toggleTOCVisibility();
-	
-	
-	
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -60,16 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Add click event listener to the toggle button
-    toggleBtn.addEventListener('click', function () {
-        // Toggle visibility of TOC container
-        toc.classList.toggle('show');
-
-        // Toggle active class on the button
-        toggleBtn.classList.toggle('active');
-
-    });
-
     // 🔹 Smooth scrolling when clicking a TOC link
     links.forEach(link => {
         link.addEventListener("click", function (event) {
@@ -89,4 +85,3 @@ document.addEventListener("DOMContentLoaded", function () {
     // 🔹 Listen for scroll events to update active section
     window.addEventListener("scroll", highlightActiveSection);
 });
-
