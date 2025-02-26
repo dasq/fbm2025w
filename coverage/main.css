@@ -1368,6 +1368,12 @@ footer > a:hover {
     font-size: 14px;
 }
 
+#toc-toggle:focus {
+    background: black;
+    opacity: 0.5;
+    outline: none; /* Removes the default focus outline */
+}
+
 #toc-toggle:hover, #toc-toggle.active  {
     background: #5C1417;
     opacity: 1;

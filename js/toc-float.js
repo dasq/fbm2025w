@@ -32,6 +32,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Run once on page load
     toggleTOCVisibility();
 	
+	// This ensures that the button doesn’t stay in the "active" or "focused" state after being tapped.	
+	toggleBtn.addEventListener("click", function () {
+		toc.classList.toggle("hidden");
+		this.blur(); // Removes focus after click
+	});
+	
 	
 });
 
