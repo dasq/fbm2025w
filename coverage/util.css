@@ -756,8 +756,6 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	.content-intro.p-b-60{padding-bottom:15px;}
 	.wrap-pic-booking{padding-top:15px;}
 	.wrap-pic-booking.size2 {max-width: 200px;}
-	.section-intro .p-t-225 {padding-top:150px;}	
-	.section-intro .p-b-250 {padding-bottom:150px;}
 	.item-slick1 {height: 400px !important;}
 	.section-welcome .p-around8 {width: 100%; margin: auto;}
 	.txtlink {padding-bottom: 15px;}
@@ -792,8 +790,11 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
     }
 	#fbm-tedx-mobile {width: 200px;}
 	.header-text {margin-top: 210px !important; }
-
-	
+	.section-video {height: 500px;}
+	.section-intro {height: 400px;}
+	.section-intro .p-t-225 {padding-top:200px;}	
+	.section-intro .p-b-250 {padding-bottom:150px;}
+	.tit1 {font-size: 40px;}
 }
 
 
@@ -864,8 +865,6 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
   .tit2 {font-size: 18px;}
   .content-video.p-t-225 {padding-top:80px;}	
 	.content-video.p-b-250 {padding-bottom:80px;}
-	.section-intro .p-t-225 {padding-top:80px;}	
-	.section-intro .p-b-250 {padding-bottom:80px;}
 	
 	.social .m-l-21 {margin-left: 15px;}
 	.social .m-l-33 {margin-left: 21px;}
@@ -877,11 +876,29 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	.header-text {margin-top: 180px !important; }
 	.header-text h1 {margin-bottom: 5px;}
 	.header-text .p-t-20 {padding-top: 10px !important;}
+	.section-video {height: 340px;}
+	.section-intro {height: 280px;}
+	.section-intro .p-t-225 {padding-top:120px;}	
+	.section-intro .p-b-250 {padding-bottom:120px;}
 	
 }
 
 @media (max-width: 360px) {
-  body {
-    font-size: 13px;
-  }
+	body {
+	font-size: 13px;
+	}
+	.section-video {height: 240px;}
+	.content-video.p-t-225 {padding-top:40px;}	
+	.content-video.p-b-250 {padding-bottom:40px;}
+	.section-intro {height: 220px;}
+	.section-intro .p-t-225 {padding-top:80px;}	
+	.section-intro .p-b-250 {padding-bottom:80px;}
+	.section-welcome .col-md-4 {width: 300px !important;   }
+	.wrap-text-blo1 {width: 260px;}
+	header .social .m-r-13{margin-right:8px;}
+	header .social .m-l-13{margin-left:8px;}
+	.home-banner {height: 320px !important;}	
+	.header-text {margin-top: 120px !important; }
+	.slick-track {height: 320px !important;}
+	
 }
