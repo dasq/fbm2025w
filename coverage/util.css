@@ -681,6 +681,7 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	.wrap-welcome-blo2 { max-width: 100% !important;}
 	#fbm-portrait { width: 300px;}
 	#fbm-tedx { width: 300px !important;}
+	.home-banner {height: 780px !important;}
 
 }
 
@@ -718,6 +719,7 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	.section-intro {height: 340px;}
 	.section-intro .p-t-225 {padding-top:150px;}	
 	.section-intro .p-b-250 {padding-bottom:150px;}
+	.home-banner {height: 640px !important;}
 }
 
 
