@@ -88,3 +88,47 @@ document.addEventListener("DOMContentLoaded", function () {
     // 🔹 Listen for scroll events to update active section
     window.addEventListener("scroll", highlightActiveSection);
 });
+
+
+// Sidebar Submenu appears smoothly
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuItems = document.querySelectorAll(".menu-sidebar > li");
+
+    menuItems.forEach(item => {
+        const link = item.querySelector("a"); // Main menu link
+        const subMenu = item.querySelector(".sidebar_sub_menu"); // Submenu
+        const arrowIcon = item.querySelector(".submenu-icon"); // The arrow icon
+
+        if (subMenu) {
+            link.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent navigation
+
+                // Check if submenu is already open
+                const isOpen = subMenu.classList.contains("open");
+
+                // Close all other submenus
+                document.querySelectorAll(".sidebar_sub_menu").forEach(otherMenu => {
+                    if (otherMenu !== subMenu) {
+                        otherMenu.classList.remove("open");
+                        otherMenu.style.maxHeight = null;
+                        otherMenu.previousElementSibling.querySelector(".submenu-icon")?.classList.remove("rotate");
+                    }
+                });
+
+                // Toggle current submenu
+                if (!isOpen) {
+                    subMenu.classList.add("open");
+                    subMenu.style.maxHeight = subMenu.scrollHeight + "px"; // Set height dynamically
+                    arrowIcon.classList.add("rotate");
+                } else {
+                    subMenu.classList.remove("open");
+                    subMenu.style.maxHeight = null;
+                    arrowIcon.classList.remove("rotate");
+                }
+            });
+        }
+    });
+});
+
+

@@ -148,7 +148,7 @@
 	
 
 	<!-- Sidebar -->
-	<aside class="sidebar trans-0-4">
+	<aside class="sidebar trans-0-4 bg1">
 		<!-- Button Hide sidebar -->
 		<button class="btn-hide-sidebar" aria-label="hide menu"><i class="fas fa-times"></i></button>
 
@@ -160,8 +160,11 @@
 			<li>
 			
 			<li class="t-center m-b-13">
-				<a href="lessons.html" class="txt19">Lessons</a>
-				<ul class="sub_menu">
+				<a href="lessons.html" class="txt19">Lessons  <i class="fas fa-caret-down submenu-icon"></i></a>
+				<ul class="sidebar_sub_menu">
+					<li>
+						<a href="lessons.html">General Informations</a>
+					</li>
 					<li>
 						<a href="online-guitar-lessons.html">Online Guitar Lessons</a>
 					</li>
@@ -175,17 +178,48 @@
 			</li>
 			
 			<li class="t-center m-b-13">
-				<a href="concerts.html" class="txt19">Concerts</a>
+				<a href="concerts.html" class="txt19">Concerts <i class="fas fa-caret-down submenu-icon"></i></a>
+				<ul class="sidebar_sub_menu">
+					<li>
+						<a href="concerts.html">General Informations</a>
+					</li>
+					<li>
+						<a href="book-aoustic-guitarist.html">Book Acoustic Guitarist</a>
+					</li>
+					<li>
+						<a href="pastconcerts.html">Past Concerts</a>
+					</li>
+					<li>
+						<a href="live-guitar-videos.html">Guitar Live Videos</a>
+					</li>
+				</ul>
 			</li>
 			<li class="t-center m-b-13">
-				<a href="about.html" class="txt19">About</a>
+				<a href="about.html" class="txt19">About <i class="fas fa-caret-down submenu-icon"></i></a>
+				<ul class="sidebar_sub_menu">
+					<li>
+						<a href="about.html">General Informations</a>
+					</li>
+					<li>
+						<a href="bio.html">Bio</a>
+					</li>
+					<li>
+						<a href="musical-projects.html">Musical Projects</a>
+					</li>
+					<li>
+						<a href="awards-testimonials.html">Awards & Testimonials</a>
+					</li>
+				</ul>
 			</li>
 			<li class="t-center">
-				<a href="contact.html" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
+				<a href="contact.html" class="txt19">
 					Contact
 				</a>
 			</li>
 		</ul>
+		<a href="contact.html" class="btn3 flex-c-m size13 txt19 trans-0-4 m-l-r-auto c-white" data-toggle="modal" data-target="#modal-calendar">
+			Book a call <i class="m-l-10 fas fa-calendar-alt"></i>
+		</a>
 	</aside>
 
 	<!-- Slide1 -->
@@ -228,7 +262,7 @@
 	
 	<!-- Floating Table of Contents -->
 	<div id="toc-container">
-		<button id="toc-toggle"><i class="fas fa-scroll"></i> Contents</button>
+		<button id="toc-toggle"><i class="fas fa-scroll"></i> <span class="hideit">Contents</span></button>
 		<nav id="floating-toc" class="hidden">
 			<ul>
 				<li><a href="#my-offer"><i class="fas fa-caret-right toc-icon"></i> What I Do</a></li>
@@ -719,7 +753,7 @@
 					<div class="col-sm-4 col-md-4 p-t-20 d-flex flex-column align-items-center">
 						<!-- - -->
 						<h4 class="txt13 ">
-							Contact Me
+							Contact
 						</h4>
 
 						<ul class="m-b-20 m-t-33">
@@ -744,10 +778,10 @@
 						</ul>
 					</div>
 
-					<div class="col-sm-4 col-md-4 p-t-20 d-flex flex-column align-items-center">
+					<div class="quick-links col-sm-4 col-md-4 p-t-20 m-b-20 d-flex flex-column align-items-center">
 						<!-- - -->
 						<h4 class="txt13">
-							Quick Navigation
+							Quick
 						</h4>
 
 						<div class="m-b-5 m-t-33">
@@ -777,7 +811,7 @@
 						</div>
 					</div>
 
-					<div class="col-sm-4 col-md-4 p-t-20 d-flex flex-column align-items-center">
+					<div class="social-links col-sm-4 col-md-4 p-t-20 d-flex flex-column align-items-center">
 						<!-- Social Links -->
 						<h4 class="txt13">
 							Social

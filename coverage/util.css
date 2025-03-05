@@ -349,7 +349,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .tit6 {
 	font-family: KarlaBold;
-	font-size: 40px;
+	font-size: 30px;
 	letter-spacing: 2px;
 	color: #5C1417 ;
 	padding-bottom: 10px;
@@ -500,11 +500,13 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 .txt19 {
 	font-family: Lora, 'Source Sans Pro';
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 18px;
 	color: #3A2E2A;
 	line-height: 1.2;
 	text-transform: uppercase;
 }
+
+.btn3.txt19 {color:white;}
 
 /*=========================================================
 SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
@@ -665,6 +667,7 @@ EFFECT   EFFECT   EFFECT   EFFECT   EFFECT   EFFECT  EFFECT
 
 
 
+
 /*=========================================================
 RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE 
 =========================================================*/
@@ -675,7 +678,6 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 @media (max-width: 1200px) {
 	.p-l-0-xl {padding-left: 0;}
 	
-	.section-welcome .col-md-4 img {width: 198px !important;}
 	.wrap-welcome-blo2 { max-width: 100% !important;}
 	#fbm-portrait { width: 300px;}
 	#fbm-tedx { width: 300px !important;}
@@ -709,6 +711,13 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	}
 	#fbm-tedx { width: 250px !important;}
 	.btn-show-sidebar {display: block !important;}
+	.section-slide .slick1 .p-t-150 {padding-top: 280px;}
+	.item1-slick1 .flex-col-c-m {min-height: 540px !important;}
+	.section-welcome .col-md-4 img {width: 198px !important;}
+	.tit6 {font-size: 23px;}
+	.section-intro {height: 340px;}
+	.section-intro .p-t-225 {padding-top:150px;}	
+	.section-intro .p-b-250 {padding-bottom:150px;}
 }
 
 
@@ -791,10 +800,14 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	#fbm-tedx-mobile {width: 200px;}
 	.header-text {margin-top: 210px !important; }
 	.section-video {height: 500px;}
-	.section-intro {height: 400px;}
-	.section-intro .p-t-225 {padding-top:200px;}	
-	.section-intro .p-b-250 {padding-bottom:150px;}
+	.section-intro {height: 290px;}
+	.section-intro .p-t-225 {padding-top:120px;}	
+	.section-intro .p-b-250 {padding-bottom:120px;}
 	.tit1 {font-size: 40px;}
+	.section-slide .slick1 .p-t-150 {padding-top: 230px;}
+	.item1-slick1 .flex-col-c-m {min-height: 470px !important;}
+	.hideit {display: none;}
+	
 }
 
 
@@ -880,6 +893,15 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	.section-intro {height: 280px;}
 	.section-intro .p-t-225 {padding-top:120px;}	
 	.section-intro .p-b-250 {padding-bottom:120px;}
+	.section-slide .slick1 .p-t-150 {padding-top: 190px;}
+	.item1-slick1 .flex-col-c-m {min-height: 380px !important;}
+	footer .social-links {display: none !important;}
+	footer .quick-links {display: none !important;}
+	
+	/* footer .social-links li { */
+    /* display: inline; */
+    /* margin-right: 10px; /* Optional spacing */ */
+/* } */
 	
 }
 
@@ -900,5 +922,9 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	.home-banner {height: 320px !important;}	
 	.header-text {margin-top: 120px !important; }
 	.slick-track {height: 320px !important;}
+	.section-welcome .col-md-4 img {width: 200px !important;}
+	#fbm-portrait-mobile {width: 140px;}
+	.section-slide .slick1 .p-t-150 {padding-top: 100px;}
+	.item1-slick1 .flex-col-c-m {min-height: 320px !important;}
 	
 }

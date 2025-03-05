@@ -422,16 +422,23 @@ iframe {
 .sidebar {
   position: fixed;
   z-index: 1200;
-  width: 390px;
+  width: 400px;
   height: 100%;
   overflow: auto;
   background-color: white;
   top: 0;
-  right: -390px;
+  right: -400px;
 }
 
 @media (max-width: 576px) {
-  .sidebar {width: 300px;}
+  .sidebar {width: 340px;}
+}
+
+@media (max-width: 360px) {
+  .sidebar {width: 270px;}
+  .txt19 {font-size: 15px;}
+  .sidebar_sub_menu a {font-size: 13px;}
+	.sidebar_sub_menu  {padding-left: 5px !important;}
 }
 
 .show-sidebar {
@@ -624,7 +631,7 @@ iframe {
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
-  min-height: 545px;
+  /*min-height: 545px;*/
 }
 .item1-slick1 .flex-col-c-m {
 	width: 100%;
@@ -991,6 +998,7 @@ input {
 .language-switcher {
   position: relative;
   display: inline-block;
+  z-index: 1000;
 }
 
 .language-dropdown {
@@ -1006,14 +1014,16 @@ input {
 .language-options {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 200%;
+  right: 0;
   background-color: #fff;
   border: 1px solid #ddd;
   list-style: none;
   padding: 5px 0;
   margin: 0;
   min-width: 120px;
+  white-space: nowrap;
+  z-index: 1000;
 }
 
 .language-options li {
@@ -1082,6 +1092,46 @@ position: relative;
   min-height: 390px;
 }
 
+
+.menu-sidebar {
+    text-align: left; /* Aligns text to the left */
+    padding-left: 20px; /* Add some space from the left */
+}
+
+.menu-sidebar li {
+    display: block; /* Ensure full width */
+
+}
+
+.menu-sidebar a {
+    display: block; /* Makes the links take full width */
+    text-align: left; /* Ensures text inside is left-aligned */
+}
+
+
+/* Sub Menu Properties for Sidebar */
+.sidebar_sub_menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out; /* Smooth dropdown effect */
+	padding-left: 20px;
+}
+
+.sidebar_sub_menu li {
+	padding-bottom: 2px;
+	padding-top: 2px;
+}
+
+.sidebar_sub_menu.open {
+    max-height: 500px; /* Adjust this value as needed */
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+
 /* ------------------------------------ */
 .effect1 {
   background-color: #cf2227;
@@ -1121,9 +1171,6 @@ position: relative;
   .subtit1 {
 	  font-size: 18px;
   }
-  .tit6 {
-	  font-size: 30px;
-  }
   .size2 {
   max-width: 280px;
 	}
@@ -1151,7 +1198,7 @@ position: relative;
 body {padding-right: 0px !important;}
 .modal {
   padding: 0px !important;
-  z-index: 1160;
+  z-index: 9999;
   overflow-x: hidden;
   overflow-y: auto !important;
 }
@@ -1298,7 +1345,7 @@ footer > a:hover {
     top: 110px;
     right: 20px;
     width: 170px;
-    z-index: 1000;
+    z-index: 1;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
