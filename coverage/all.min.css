@@ -201,3 +201,41 @@
 .fa-chevron-down::before {
     content: "\f078";
 }
+
+/* For specific icon styling if needed */
+.fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900; /* Ensures solid icons are rendered */
+}
+
+.fas.fa-laptop::before {
+    content: "\f109"; /* Laptop Icon */
+}
+
+.fas.fa-user-graduate::before {
+    content: "\f501"; /* Graduate Icon */
+}
+
+.fas.fa-chart-line::before {
+    content: "\f201"; /* Chart Line Icon */
+}
+
+.fas.fa-users::before {
+    content: "\f0c0"; /* Users Icon */
+}
+
+.fas.fa-route::before {
+    content: "\f5b0"; /* Route Icon */
+}
+
+.fas.fa-theater-masks::before {
+    content: "\f630"; /* Theater Masks Icon */
+}
+
+.fas.fa-clock::before {
+    content: "\f017"; /* Clock Icon */
+}
+
+.fas.fa-clipboard-list::before {
+    content: "\f46d"; /* fa-clipboard-list Icon */
+}
