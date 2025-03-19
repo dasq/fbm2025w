@@ -653,6 +653,93 @@ iframe {
 
 .faq-item {margin-bottom: 10px; margin-top: 10px;}	
 
+
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+	background-color: rgba(219, 215, 210, 0.9);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+	margin: 2px;
+}
+
+#cookie-banner form {
+    margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#cookie-banner label {
+    font-family: Lora, 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #3A2E2A;
+    margin: 2px;
+}
+
+.video-consent-banner {
+	background-color: rgba(219, 215, 210, 0.9);
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+	position: absolute; /* Position the item absolutely within the container */
+  top: 50%; /* Move the item down by 50% of the container's height */
+  left: 50%; /* Move the item right by 50% of the container's width */
+  transform: translate(-50%, -50%); /* Adjust the item's position to truly center it */
+}
+
+
+#cookie-banner button, .video-consent-banner button, #accept-calendar-consent {
+    background-color: #5C1417;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+	margin: 2px;
+}
+
+#cookie-banner button:hover, .video-consent-banner button:hover, #accept-calendar-consent:hover {
+    background-color: #4a1013;
+  color: white ;
+  transform: scale(1.1);
+}
+
+#reject-cookies {
+    background-color: #f44336;
+}
+
+#reject-cookies:hover {
+    background-color: #d32f2f;
+}
+
+.modal-cal {
+    padding: 0px !important;
+    z-index: 9999;
+    overflow-x: hidden;
+    overflow-y: auto !important;
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    outline: 0;
+}
+
+
 @media (max-width: 576px) {
   .next-slick1 {
     right: 15px;

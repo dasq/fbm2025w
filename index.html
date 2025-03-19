@@ -44,16 +44,6 @@
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>-->
 
 <!--<link rel="stylesheet" type="text/css" href="css/styles.pure.css">-->
-	
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-JTL7T2P53Q"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-JTL7T2P53Q');
-	</script>
 
 </head>
 <body >
@@ -473,7 +463,11 @@
 			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
 				My Music
 			</h3>
-
+			
+			<div id="videoConsentBanner" style="display: none; position: fixed; bottom: 20px; left: 20px; background: rgba(0, 0, 0, 0.8); color: white; padding: 15px; border-radius: 5px;">
+				<p>To watch this video, you need to accept media cookies.</p>
+				<button onclick="acceptMediaCookies()">Accept</button>
+			</div>
 			<div class="btn-play ab-center size16 hov-pointer m-l-r-auto m-t-43 m-b-33" data-toggle="modal" data-target="#modal-video-01">
 				<div class="flex-c-m sizefull bo-cir bgwhite color1 hov1 trans-0-4">
 					<i class="fa fa-play fs-18 m-l-2" aria-hidden="true"></i>
@@ -873,12 +867,42 @@
 								<a href="#" class="fs-15 txt17 c-white">Impressum</a>
 							</div>
 							
-							<div class="txt17 p-r-0 p-t-5 p-b-5">
+							<div class="txt17 p-r-20 p-t-5 p-b-5">
 								<a href="#" class="fs-15 txt17 c-white">Cookies</a>
 							</div>
+							<div class="txt17 p-r-0 p-t-5 p-b-5">
+								<button id="manage-cookies" class="fs-15 txt17 c-white">Manage cookies</button>
+							</div>
+							
 						</p>
 					</div>
 				</div>
+		</div>
+		
+		<!-- Cookies Consent -->
+		<div id="cookie-banner">
+			<p>I use cookies on this website to make your experience better. Is that okay with you?
+				<a href="privacy-policy.html">Learn more</a>
+			</p>
+			<form id="cookie-consent-form">
+				<label>
+				  <input type="checkbox" name="necessary" checked disabled> Necessary Cookies
+				</label>
+				<label>
+				  <input type="checkbox" name="analytics"> Analytics Cookies
+				</label>
+				<label>
+				  <input type="checkbox" name="calendar"> Google Calendar Cookies
+				</label>
+				<label>
+				  <input type="checkbox" name="youtube"> YouTube Cookies
+				</label>
+			</form>
+			<div class="cookie-buttons">
+				<button id="accept-cookies">Accept</button>
+				<button id="reject-cookies">Reject</button>
+				<button id="prefer-cookies">Save Preferences</button>
+			</div>
 		</div>
 
 	</footer>
@@ -894,22 +918,27 @@
 	<!-- Container Selection1 -->
 	<div id="dropDownSelect1"></div>
 	
-	<!-- Video Modal -->
-	<div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
+	
+	<!-- Video Modal 1 -->
+	<div class="modal fade" id="modal-video-01" data-video-url="https://www.youtube.com/embed/videoseries?si=gjAYf9yE-2g0AMwP&amp;list=PL6i964kxZ6uNYnvabEwdPgFGxqFFq-j0c" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="close-mo-video-01" data-dismiss="modal">&times;</div>
 			<div class="wrap-video-mo-01">
-				
 				<div class="modal-body">
-					<!-- Video Container (Lazy Loading) -->
-					<div id="video-container" class="embed-responsive embed-responsive-16by9"></div>
+					<!-- Consent Banner -->
+					<div class="video-consent-banner">
+						<p>This video is hosted on YouTube. Do you accept?</p>
+						<button onclick="acceptMediaCookies('modal-video-01', 'https://www.youtube.com/embed/videoseries?si=gjAYf9yE-2g0AMwP&amp;list=PL6i964kxZ6uNYnvabEwdPgFGxqFFq-j0c')">Accept</button>
+					</div>
+					<!-- Video Container -->
+					<div class="video-container embed-responsive embed-responsive-16by9"></div>
 				</div>
 			</div>
 		</div>
 	</div>
 	
 	
-	<!-- 📅 Google Calendar Modal -->
+	<!-- 📅 Google Calendar Modal 
 	<div id="modal-calendar" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
@@ -921,7 +950,29 @@
 				</div>
 			</div>
 		</div>
+	</div>-->
+	<!-- 📅 Google Calendar Modal -->
+	<div id="modal-calendar" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+				</div>
+				<div class="modal-body">
+					<!-- Consent Banner (Hidden by Default) -->
+					<div id="calendar-consent-banner" class="calendar-consent-banner">
+						<p>We use Google Calendar, which requires to set cookies. Please accept to access the Google Calendar.</p>
+						<button id="accept-calendar-consent">Accept</button>
+					</div>
+					<!-- Google Calendar Iframe -->
+					<iframe id="calendarIframe" width="100%" height="600" frameborder="0" style="display: none;"></iframe>
+				</div>
+			</div>
+		</div>
 	</div>
+
+	
+	
 
 
 <!--===============================================================================================-->
@@ -931,6 +982,7 @@
 <!--===============================================================================================-->
 	<script defer type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
 	<script defer type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	
 <!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
@@ -947,7 +999,11 @@
 <!--===============================================================================================
 	<script  type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>-->
 <!--===============================================================================================-->
+	<script  type="text/javascript" src="coverage/cookies.js"></script>
+	<script  type="text/javascript" src="js/g-calendar.js"></script>
+	<script  type="text/javascript" src="js/youtube.js"></script>
 	<script  type="text/javascript" src="js/toc-float.js"></script>
+	
 	<script src="js/main.js"></script>
 <!-- Defer the loading of YouTube scripts 
 	<script defer src="https://www.youtube.com/iframe_api"></script>-->

@@ -14,7 +14,7 @@
     });
 
     /*[ Play Video - Optimized Lazy Loading ]
-    ===========================================================*/
+    ===========================================================
     $('#modal-video-01').on('shown.bs.modal', function () {
         var modalBody = document.getElementById('video-container');
         if (!modalBody.querySelector('iframe')) {
@@ -30,7 +30,7 @@
 
     $('#modal-video-01').on('hidden.bs.modal', function () {
         document.getElementById('video-container').innerHTML = ''; // Clear iframe on close
-    });
+    });*/
 
     /*[ Fixed Header ]
     ===========================================================*/
@@ -66,13 +66,13 @@
     });
 
     /*[ Google Calendar Modal ]
-    ===========================================================*/
+    ===========================================================
     $('[data-target="#modal-calendar"]').on("click", function () {
         $("#calendarIframe").attr("src", "https://calendar.google.com/calendar/appointments/schedules/AcZssZ35Fj0vgpJ5HiFwsxTE2jnN9o4hoVkzW6d7RY3GfUWUku_1DDOJfchPHmXYv_AwKG4C-Fsjo1Yo?gv=true");
     });
 
     $("#modal-calendar").on("hidden.bs.modal", function () {
         $("#calendarIframe").attr("src", "");
-    });
+    });*/
 
 })(jQuery);
