@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Show modal event
     $("#modal-calendar").on("shown.bs.modal", function () {
-        if (getCookie("CalendarConsent") === "accepted") {
+        if (getCookie("calendarConsent") === "accepted") {
             console.log("Calendar consent accepted, loading Google Calendar.");
             loadGoogleCalendar();
         } else {
@@ -20,14 +20,26 @@ document.addEventListener("DOMContentLoaded", function () {
     // Accept consent and load calendar
     document.getElementById("accept-calendar-consent").addEventListener("click", function () {
         console.log("User accepted calendar cookies.");
-        setCookie("CalendarConsent", "accepted", 365);
+        setCookie("calendarConsent", "accepted", 365);
         loadGoogleCalendar();
     });
 
     // Hide calendar on modal close
     $("#modal-calendar").on("hidden.bs.modal", function () {
         console.log("Modal closed, clearing calendar iframe.");
+
+        // Move focus to a safe element (e.g., the "Manage cookies" button or another focusable element)
+        const manageCookiesButton = document.getElementById("manage-cookies");
+        if (manageCookiesButton) {
+            manageCookiesButton.focus(); // Move focus to the "Manage cookies" button
+        }
+
+        // Clear the calendar iframe
         calendarIframe.src = "";
+
+        // Ensure the modal is properly hidden and aria-hidden is set
+        const modal = document.getElementById("modal-calendar");
+        modal.setAttribute("aria-hidden", "true");
     });
 
     function loadGoogleCalendar() {

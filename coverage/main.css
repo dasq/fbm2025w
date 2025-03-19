@@ -695,9 +695,10 @@ iframe {
     align-items: center;
     gap: 10px;
 	position: absolute; /* Position the item absolutely within the container */
-  top: 50%; /* Move the item down by 50% of the container's height */
-  left: 50%; /* Move the item right by 50% of the container's width */
-  transform: translate(-50%, -50%); /* Adjust the item's position to truly center it */
+	top: 50%; /* Move the item down by 50% of the container's height */
+	left: 50%; /* Move the item right by 50% of the container's width */
+	transform: translate(-50%, -50%); /* Adjust the item's position to truly center it */
+	z-index: 10;
 }
 
 
