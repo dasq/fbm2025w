@@ -45,6 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function loadGoogleCalendar() {
         consentBanner.style.display = "none"; // Hide consent banner
         calendarIframe.style.display = "block"; // Show iframe
+		// Add cookie attributes to iframe
+		calendarIframe.setAttribute("cookie", "SameSite=None; Secure; Partitioned");
         calendarIframe.src = calendarUrl; // Load Google Calendar
     }
 

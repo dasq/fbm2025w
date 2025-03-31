@@ -93,8 +93,12 @@ function setCookie(name, value, days) {
         date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
         expires = "; expires=" + date.toUTCString();
     }
-    document.cookie = name + "=" + value + expires + "; path=/; SameSite=Lax; Secure";
-    console.log(`Cookie set: ${name}=${value}; expires=${expires}`);
+    // New cookie settings with all required attributes
+    document.cookie = `${name}=${value}${expires}; path=/; Secure; SameSite=Lax${
+        name.startsWith('_ga') ? '; Partitioned' : ''  // Special handling for GA cookies
+    }`;
+    
+    console.log(`Cookie set: ${name}=${value}${expires}; path=/; Secure; SameSite=Lax`);
 }
 
 // Helper function to get cookies
@@ -195,18 +199,35 @@ function loadGoogleAnalytics() {
         return; // GA already loaded
     }
 
+    // Initialize with default denied consent
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied'
+    });
+
+    // Update if user consented
+    if(getCookie("analyticsConsent") === "accepted") {
+        gtag('consent', 'update', {
+            'analytics_storage': 'granted',
+            'ad_storage': 'granted'
+        });
+    }
+
+    // Load GA script
     const script = document.createElement("script");
     script.src = "https://www.googletagmanager.com/gtag/js?id=G-JTL7T2P53Q";
     script.async = true;
     document.head.appendChild(script);
 
-    script.onload = function () {
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-        gtag("config", "G-JTL7T2P53Q", { anonymize_ip: true });
+    script.onload = function() {
+        gtag('js', new Date());
+        gtag('config', 'G-JTL7T2P53Q', { 
+            anonymize_ip: true,
+            cookie_flags: 'SameSite=None; Secure; Partitioned',
+			cookie_domain: 'auto'
+        });
     };
 }
 

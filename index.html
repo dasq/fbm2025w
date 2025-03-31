@@ -313,7 +313,7 @@
 									<div class="row key-points">
 										<div class="col-md-4">
 											<i class="fas fa-heart"></i>
-											<p>Emotion-Driven Performance</p>
+											<p>Emotion Driven Show</p>
 										</div>
 										<div class="col-md-4">
 											<i class="fas fa-guitar"></i>
@@ -371,7 +371,7 @@
 										</div>
 										<div class="col-md-4">
 											<i class="fas fa-music"></i>
-											<p>Custom learning resources</p>
+											<p>Custom learning materials</p>
 										</div>
 										<div class="col-md-4">
 											<i class="fas fa-graduation-cap"></i>
@@ -419,15 +419,15 @@
 									<div class="row key-points">
 										<div class="col-md-4">
 											<i class="fas fa-compact-disc"></i>
-											<p>Original compositions & covers</p>
+											<p>Original songs & covers</p>
 										</div>
 										<div class="col-md-4">
 											<i class="fas fa-video"></i>
-											<p>Live & studio recordings</p>
+											<p>Live & studio takes</p>
 										</div>
 										<div class="col-md-4">
 											<i class="fas fa-globe"></i>
-											<p>World music influences</p>
+											<p>World music sounds</p>
 										</div>
 									</div>
 
@@ -720,7 +720,7 @@
 					Stay in touch
 				</span>
 				<div class="wrap-input-signup size17 bo2 bo-rad-5 bgwhite pos-relative txt10 m-10">
-					<input type="email" name="EMAIL" class="required email bo-rad-5 sizefull txt10 p-l-20" id="mce-EMAIL" required="" value="" placeholder="Email Adrress">
+					<input type="email" name="EMAIL" class="required email bo-rad-5 sizefull txt10 p-l-20" id="mce-EMAIL" required="" value="" placeholder="Email Adrress" autocomplete="email">
 					<i class="fa fa-envelope ab-r-m m-r-18" aria-hidden="true"></i>
 				</div>
 				<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn3 flex-c-m size18 txt3 trans-0-4 m-10" value="Subscribe">
@@ -881,27 +881,34 @@
 		
 		<!-- Cookies Consent -->
 		<div id="cookie-banner">
-			<p>I use cookies on this website to make your experience better. Is that okay with you?
-				<a href="privacy-policy.html">Learn more</a>
-			</p>
-			<form id="cookie-consent-form">
-				<label>
-				  <input type="checkbox" name="necessary" checked disabled> Necessary Cookies
-				</label>
-				<label>
-				  <input type="checkbox" name="analytics"> Analytics Cookies
-				</label>
-				<label>
-				  <input type="checkbox" name="calendar"> Google Calendar Cookies
-				</label>
-				<label>
-				  <input type="checkbox" name="youtube"> YouTube Cookies
-				</label>
-			</form>
-			<div class="cookie-buttons">
-				<button id="accept-cookies">Accept All</button>
-				<button id="reject-cookies">Reject All</button>
-				<button id="prefer-cookies">Save Preferences</button>
+			<div class="d-flex flex-column align-items-center justify-content-center" style="width: 100%;">
+				<!-- Text -->
+				<p>I use cookies on this website to make your experience better. Is that okay with you?
+					<a href="privacy-policy.html">Learn more</a>
+				</p>
+
+				<!-- Form (checkboxes in one line) -->
+				<form id="cookie-consent-form" class="d-flex gap-3">
+					<label>
+						<input type="checkbox" name="necessary" checked disabled> Necessary Cookies
+					</label>
+					<label>
+						<input type="checkbox" name="analytics"> Analytics Cookies
+					</label>
+					<label>
+						<input type="checkbox" name="calendar"> Google Calendar Cookies
+					</label>
+					<label>
+						<input type="checkbox" name="youtube"> YouTube Cookies
+					</label>
+				</form>
+
+				<!-- Buttons (all in one line) -->
+				<div class="cookie-buttons d-flex gap-2">
+					<button id="reject-cookies">Reject All</button>
+					<button id="prefer-cookies">Save Preferences</button>
+					<button id="accept-cookies">Accept All</button>
+				</div>
 			</div>
 		</div>
 

@@ -72,6 +72,8 @@ window.loadYouTubeVideo = function (modalId, videoUrl) {
             iframe.frameBorder = "0";
             iframe.allowFullscreen = true;
             iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+			// Add cookie attributes to iframe
+            iframe.setAttribute("cookie", "SameSite=None; Secure; Partitioned");
             modalBody.appendChild(iframe);
 
             console.log("YouTube iframe created.");

@@ -239,3 +239,43 @@
 .fas.fa-clipboard-list::before {
     content: "\f46d"; /* fa-clipboard-list Icon */
 }
+
+.fa-comments::before {
+    content: "\f086"; /* Comments Icon */
+}
+
+.fa-handshake::before {
+    content: "\f2b5"; /* Handshake Icon */
+}
+
+.fa-hand-rock::before {
+    content: "\f255"; /* Hand Rock Icon */
+}
+
+.fa-brain::before {
+    content: "\f5dc"; /* Brain Icon */
+}
+
+.fa-eye::before {
+    content: "\f06e"; /* Eye Icon */
+}
+
+.fa-bullhorn::before {
+    content: "\f0a1"; /* Bullhorn Icon */
+}
+
+.fa-hand-point-up::before {
+    content: "\f0a6"; /* Hand Pointing Up Icon */
+}
+
+.fa-random::before {
+    content: "\f074"; /* Random (Improvisation) Icon */
+}
+
+.fa-bolt::before {
+    content: "\f0e7"; /* Lightning Bolt (Electric Guitar) Icon */
+}
+
+.fa-balance-scale::before {
+    content: "\f24e"; /* Balance Scale Icon (for Competitive & Fair Prices) */
+}

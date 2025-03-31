@@ -84,7 +84,7 @@ p {
   font-weight: 400;
 	font-size: 15px;
 	line-height: 1.7;
-	color: #3A2E2A;
+	color: #2A211E;
 	margin: 0px;
 }
 
@@ -448,7 +448,7 @@ iframe {
 .btn-hide-sidebar {
   position: absolute;
   font-size: 24px;
-  color: #3A2E2A;
+  color: #2A211E;
   padding: 10px;
   top: 20px;
   right: 20px;
@@ -591,7 +591,7 @@ iframe {
 .home-banner {
     position: relative;
     width: 100%;
-    height: 920px; /* Adjust if necessary */
+    height: 820px; /* Adjust if necessary */
     overflow: hidden;
     display: flex;
     align-items: center; /* Centers content vertically */
@@ -655,25 +655,36 @@ iframe {
 
 
 #cookie-banner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-	background-color: rgba(219, 215, 210, 0.9);
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-	margin: 2px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(219, 215, 210, 0.9);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 2px;
+  min-height: 120px;
+  height: 33vh;
+}
+
+#cookie-banner > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensure the child div takes up the full height */
 }
 
 #cookie-banner form {
-    margin-top: 5px;
-	margin-bottom: 5px;
+	display: flex;
+    gap: 20px; /* Space between checkboxes */
+	margin: 10px 0; /* Margin above and below the form */
 }
 
 #cookie-banner label {
@@ -681,7 +692,7 @@ iframe {
     font-weight: 400;
     font-size: 15px;
     line-height: 1.7;
-    color: #3A2E2A;
+    color: #2A211E;
     margin: 2px;
 }
 
@@ -702,7 +713,8 @@ iframe {
 }
 
 
-#cookie-banner button, .video-consent-banner button, #accept-calendar-consent {
+.video-consent-banner button, #accept-calendar-consent {
+	display: flex;
     background-color: #5C1417;
     color: white;
     border: none;
@@ -710,21 +722,42 @@ iframe {
     cursor: pointer;
     font-size: 14px;
     border-radius: 5px;
-	margin: 2px;
+	margin: 5px;
 }
 
-#cookie-banner button:hover, .video-consent-banner button:hover, #accept-calendar-consent:hover {
-    background-color: #4a1013;
-  color: white ;
+#cookie-banner button{
+	display: flex;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#accept-cookies {
+  background-color: #5C1417; 
+  color: #ffffff;
+}
+#accept-cookies:hover, #reject-cookies:hover, #prefer-cookies:hover {
   transform: scale(1.1);
 }
 
-#reject-cookies {
-    background-color: #f44336;
+#prefer-cookies {
+  background-color: #EFEFED; /* Gray */
+  color: #2A211E;
 }
 
-#reject-cookies:hover {
-    background-color: #d32f2f;
+#reject-cookies {
+  background-color: #837874 ; /* Muted brown */
+  color: #ffffff;
+}
+
+.video-consent-banner button:hover, #accept-calendar-consent:hover {
+  background-color: #4a1013;
+  color: white ;
+  transform: scale(1.1);
 }
 
 .modal-cal {
@@ -1058,6 +1091,9 @@ input {
 */
 
 .wrap-welcome-blo2{max-width: 60%; margin:auto;}
+#teaching-approach .wrap-welcome-blo2 {
+  max-width: 90%;
+}
 
 .awards img {max-width: 100%; height: auto; }
 
@@ -1124,7 +1160,7 @@ input {
 }
 .language-options li a {
   text-decoration: none;
-  color: #3A2E2A !important;
+  color: #2A211E !important;
 }
 
 .language-options flag-icon:hover {
@@ -1240,6 +1276,66 @@ position: relative;
   -ms-transform: translate(-50%, -50%) rotateZ(90deg);
   -o-transform: translate(-50%, -50%) rotateZ(90deg);
   transform: translate(-50%, -50%) rotateZ(90deg);
+}
+
+/* Price Table */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* General table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Borders for table and cells */
+.table-bordered th, 
+.table-bordered td {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+/* Header Styling */
+.table thead {
+    background-color: #823131; /* Your terracotta color */
+    color: white;
+}
+
+/* Add alternating row colors */
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+	color: #212529;
+}
+
+/* Button inside the table */
+.table a.btn-primary {
+    background-color: #823131; /* Terracotta */
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.table a.btn-primary:hover {
+    background-color: #6b2727; /* Darker terracotta */
+}
+
+/* Responsive Table - Small Screens */
+@media screen and (max-width: 768px) {
+    .table {
+        font-size: 14px;
+    }
+    .table a.btn-primary {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 1041px) {
@@ -1475,7 +1571,7 @@ footer > a:hover {
 
 #floating-toc a {
     text-decoration: none;
-    color: #3A2E2A;
+    color: #2A211E;
     transition: color 0.2s;
 }
 
