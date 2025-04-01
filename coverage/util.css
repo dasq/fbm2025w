@@ -54,6 +54,8 @@
 .m-t-33 {margin-top: 33px;}
 .m-t-43 {margin-top: 43px;}
 .m-b-0 {margin-bottom: 0px;}
+.m-b-5 {margin-bottom: 5px;}
+.m-b-10 {margin-bottom: 10px;}
 .m-b-13 {margin-bottom: 13px;}
 .m-b-14 {margin-bottom: 14px;}
 .m-b-15 {margin-bottom: 15px;}
@@ -328,7 +330,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 	line-height: 1;
 	color: #2A211E;
 	text-transform: uppercase;
-	letter-spacing: 6px;
+	letter-spacing: 4px;
 }
 
 .tit4 {
@@ -344,7 +346,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .tit5 {
 	font-family: Karla;
-	font-size: 40px;
+	font-size: 34px;
 	line-height: 1.3;
 	color: #2A211E;
 }
@@ -394,8 +396,16 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 	font-family: KarlaBold;
 	font-weight: 500;
 	font-size: 22px;
-	color: #333333;
+	color: #212529;
 	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.txt6 {
+	font-family: Lora, 'Source Sans Pro';
+	font-weight: 500;
+	font-size: 28px;
+	color: #212529;
 	letter-spacing: 3px;
 }
 
@@ -403,7 +413,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 	font-family: Lora, 'Source Sans Pro';
 	font-weight: 400;
 	font-size: 14px;
-	color: #666666;
+	color: #212529;
 }
 
 .txt11 {
@@ -750,7 +760,7 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 /*[ MD ]
 -----------------------------------------------------------
 */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	.w-full-md {width: 100%}
 	.p-r-0-md {padding-right: 0;}
 	.p-l-0-md {padding-left: 0;}
@@ -776,10 +786,10 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	.bg9 button.m-10 {margin: 5px;}
 	.size17 {width: 180px;}
 	.size18 {width: 100px;}
-	.tit3 {font-size:30px;}
+	.tit3 {font-size:30px; letter-spacing: 2px;}
 	.size6 {width: 230px;height: 44px;}
 	.txt3 {font-size: 16px;}
-	.tx11 {font-size: 16px;}
+	.txt11 {font-size: 16px;}
 	.wrap-text-blo1.p-t-35 {padding-top: 15px;}
 	.content-video.p-t-225 {padding-top:150px;}	
 	.content-video.p-b-250 {padding-bottom:150px;}
@@ -834,6 +844,13 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	.item1-slick1 .flex-col-c-m {min-height: 470px !important;}
 	.hideit {display: none;}
 	
+	#teaching-approach .key-points .col-md-4 {
+        width: 50% !important; /* Forces 2 columns */
+        max-width: 50% !important;
+        display: inline-block; /* Keeps elements side by side */
+        text-align: center; /* Centers content */
+    }
+	.txt6 {font-size: 22px;}
 }
 
 
@@ -900,6 +917,10 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
    .tit3 {
     font-size: 24px;
   }
+  .tit1 {
+    font-size: 28px;
+	letter-spacing: 8px;
+  }
   .tit7 {font-size: 18px;}
   .tit2 {font-size: 18px;}
   .content-video.p-t-225 {padding-top:80px;}	
@@ -909,7 +930,7 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	.social .m-l-33 {margin-left: 21px;}
 	
 	.section-welcome .col-md-4 img {width: 320px !important;}
-	.wrap-text-blo1 {width: 320px; }
+	.wrap-text-blo1 {width: 380px; }
 	#fbm-portrait-mobile { width: 200px;}
 	.home-banner {height: 352px !important;}
 	.header-text {margin-top: 180px !important; }
@@ -919,15 +940,21 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	.section-intro {height: 280px;}
 	.section-intro .p-t-225 {padding-top:120px;}	
 	.section-intro .p-b-250 {padding-bottom:120px;}
-	.section-slide .slick1 .p-t-150 {padding-top: 190px;}
+	.section-slide .slick1 .p-t-150 {padding-top: 150px;}
 	.item1-slick1 .flex-col-c-m {min-height: 380px !important;}
 	footer .social-links {display: none !important;}
 	footer .quick-links {display: none !important;}
+	.tit5 {font-size: 28px;}
 	
 	/* footer .social-links li { */
     /* display: inline; */
     /* margin-right: 10px; /* Optional spacing */ */
 /* } */
+	
+}
+
+@media (max-width: 440px) {
+    .wrap-text-blo1 {width: 310px;}
 	
 }
 
@@ -952,5 +979,8 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	#fbm-portrait-mobile {width: 140px;}
 	.section-slide .slick1 .p-t-150 {padding-top: 100px;}
 	.item1-slick1 .flex-col-c-m {min-height: 320px !important;}
-	
+	.tit1 {
+    font-size: 24px;
+	letter-spacing: 5px;
+  }
 }

@@ -279,3 +279,68 @@
 .fa-balance-scale::before {
     content: "\f24e"; /* Balance Scale Icon (for Competitive & Fair Prices) */
 }
+
+/* Language Icon (using comments as alternative) */
+.fa-comments:before {
+    content: "\f086"
+}
+
+/* Screen Share Icon */
+.fa-share-square:before {
+    content: "\f14d"
+}
+
+/* PDF File Icon */
+.fa-file-pdf:before {
+    content: "\f1c1"
+}
+
+/* Headphones Icon */
+.fa-headphones:before {
+    content: "\f025"
+}
+
+/* Cloud Upload Icon */
+.fa-cloud-upload-alt:before {
+    content: "\f382"
+}
+
+/* Cloud Download Icon */
+.fa-cloud-download-alt:before {
+    content: "\f381"
+}
+
+/* Record Vinyl Icon */
+.fa-record-vinyl:before {
+    content: "\f8d9"
+}
+
+/* Globe Europe Icon */
+.fa-globe-europe:before {
+    content: "\f7a2"
+}
+
+/* Laptop Icon (already in your CSS but for completeness) */
+.fa-laptop:before {
+    content: "\f109"
+}
+
+/* Language Icon */
+.fa-language:before {
+    content: "\f1ab"
+}
+
+/* Cloud Icon (regular) */
+.fa-cloud:before {
+    content: "\f0c2"
+}
+
+/* Cloud Upload Icon */
+.fa-cloud-upload-alt:before, .fa-cloud-arrow-up:before {
+    content: "\f0ee"
+}
+
+/* Cloud Download Icon */
+.fa-cloud-download-alt:before, .fa-cloud-arrow-down:before {
+    content: "\f0ed"
+}
