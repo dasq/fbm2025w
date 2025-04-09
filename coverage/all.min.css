@@ -344,3 +344,12 @@
 .fa-cloud-download-alt:before, .fa-cloud-arrow-down:before {
     content: "\f0ed"
 }
+
+.fa-tree:before {
+    content: "\f1bb"; 
+}
+
+/* Running Person Icon (for commute avoidance) */
+.fa-running:before {
+  content: "\f70c";
+}
