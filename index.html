@@ -21,7 +21,8 @@
 	<link rel="stylesheet" type="text/css" href="coverage/util.css">
 	<link rel="stylesheet" type="text/css" href="coverage/main.css">
 	
-	<link rel="preload" as="image" href="images/background/faridbenmiles-mobile.webp" as="image" imagesrcset="images/background/faridbenmiles-mobile.webp 768w, images/background/faridbenmiles.webp 1920w" imagesizes="(max-width: 768px) 100vw, 1920px" type="image/webp">
+	<link rel="preload" as="image" href="images/background/faridbenmiles.webp" type="image/webp">
+
 
 	
 <!--	<link rel="preload" as="image" href="images/background/faridbenmiles.webp" type="image/webp">
@@ -231,9 +232,12 @@
 				<div class="home-banner">
 					<img 
 					  class="home-banner-img" 
-					  src="images/background/faridbenmiles.webp" 
-					  srcset="images/background/faridbenmiles-mobile.webp 768w, images/background/faridbenmiles.webp 1920w"
-					  sizes="(max-width: 768px) 100vw, 1920px"
+					  src="images/background/faridbenmiles-1280.webp" 
+					  srcset="
+						images/background/faridbenmiles-mobile.webp 768w,
+						images/background/faridbenmiles-1280.webp 1280w,
+						images/background/faridbenmiles.webp 1920w"
+					  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 100vw, 1920px"
 					  alt="Farid Ben Miles"
 					  fetchpriority="high"
 					>
@@ -456,7 +460,7 @@
 	</section>
 	
 	<!-- Video -->
-	<section class="section-video parallax100" style="background-image: url(images/background/faridbenmiles-live-in-the-attic-dresden.jpg);" id="my-music">
+	<section class="section-video parallax100 my-music" id="my-music">
 		<div class="content-video t-center p-t-225 p-b-250">
 
 			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
@@ -634,7 +638,7 @@
 
 	
 	<section class="section-intro">
-		<div class="header-intro parallax100 t-center p-t-225 p-b-250" style="background-image: url(&quot;images/background/faridbenmiles-live-at-the-palais-sommer-dresden.jpg&quot;); background-position: center 17.3333px;">
+		<div class="header-intro parallax100 t-center p-t-225 p-b-250 palais-sommer" >
 			<em class="tit7 p-l-15 p-r-15">
 				"Giving all my heart when playing became a crucial goal I always challenge myself to achieve."
 			</em>

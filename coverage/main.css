@@ -1,40 +1,56 @@
+/* --- Karla --- */
 @font-face {
-  font-family: Karla;
-  src: url('../fonts/Karla/static/Karla-Regular.ttf'); 
+  font-family: 'Karla';
+  src: url('../fonts/Karla/static/Karla-Regular.woff2') format('woff2'),
+       url('../fonts/Karla/static/Karla-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 @font-face {
-  font-family: KarlaItalic;
-  src: url('../fonts/Karla/static/Karla-Italic.ttf'); 
+  font-family: 'KarlaItalic';
+  src: url('../fonts/Karla/static/Karla-Italic.woff2') format('woff2'),
+       url('../fonts/Karla/static/Karla-Italic.ttf') format('truetype');
+  font-display: swap;
 }
 @font-face {
-  font-family: KarlaBold;
-  src: url('../fonts/Karla/static/Karla-Bold.ttf'); 
-}
-@font-face {
-  font-family: Lora;
-  src: url('../fonts/Lora/static/Lora-Regular.ttf'); 
-}
-@font-face {
-  font-family: LoraSemiBold;
-  src: url('../fonts/Lora/static/Lora-SemiBold.ttf'); 
-}
-@font-face {
-  font-family: LoraItalic;
-  src: url('../fonts/Lora/static/Lora-Italic.ttf'); 
+  font-family: 'KarlaBold';
+  src: url('../fonts/Karla/static/Karla-Bold.woff2') format('woff2'),
+       url('../fonts/Karla/static/Karla-Bold.ttf') format('truetype');
+  font-display: swap;
 }
 
+/* --- Lora --- */
 @font-face {
-  font-family: 'Font Awesome 6 Free';
-  font-style: normal;
-  font-weight: 900;
-  src: url('../fonts/font-awesome-6.0.0-beta3/fa-solid-900.woff2') format('woff2');
+  font-family: 'Lora';
+  src: url('../fonts/Lora/static/Lora-Regular.woff2') format('woff2'),
+       url('../fonts/Lora/static/Lora-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 @font-face {
-  font-family: 'Font Awesome 6 Free';
-  font-style: normal;
-  font-weight: 900;
-  src: url('../fonts/font-awesome-6.0.0-beta3/fa-brands-400.woff2') format('woff2');
+  font-family: 'LoraSemiBold';
+  src: url('../fonts/Lora/static/Lora-SemiBold.woff2') format('woff2'),
+       url('../fonts/Lora/static/Lora-SemiBold.ttf') format('truetype');
+  font-display: swap;
 }
+@font-face {
+  font-family: 'LoraItalic';
+  src: url('../fonts/Lora/static/Lora-Italic.woff2') format('woff2'),
+       url('../fonts/Lora/static/Lora-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* --- Font Awesome --- */
+@font-face { 
+	font-family: 'Font Awesome 6 Free'; font-style: normal; 
+	font-weight: 900; 
+	src: url('../fonts/font-awesome-6.0.0-beta3/fa-solid-900.woff2') format('woff2'); 
+	} 
+@font-face { 
+	font-family: 'Font Awesome 6 Free'; 
+	font-style: normal; 
+	font-weight: 900; 
+	src: url('../fonts/font-awesome-6.0.0-beta3/fa-brands-400.woff2') format('woff2'); 
+	}
+
 
 /*[ RESTYLE TAG ]
 ///////////////////////////////////////////////////////////
@@ -157,6 +173,86 @@ iframe {
     right: 15px;
   }
 }
+
+/* Gerer tailles background images */
+/* CSS */
+
+/* Section my-music */
+.section-video.parallax100.my-music {
+  background-image: url('../images/background/faridbenmiles-live-in-the-attic-dresden.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 1280px) {
+  .section-video.parallax100.my-music {
+    background-image: url('../images/background/faridbenmiles-live-in-the-attic-dresden-1280.webp');
+  }
+}
+
+@media (max-width: 768px) {
+  .section-video.parallax100.my-music {
+    background-image: url('../images/background/faridbenmiles-live-in-the-attic-dresden-768.webp');
+  }
+}
+
+@media (max-width: 480px) {
+  .section-video.parallax100.my-music {
+    background-image: url('../images/background/faridbenmiles-live-in-the-attic-dresden-480.webp');
+  }
+}
+
+/* Section palais-sommer */
+.header-intro.parallax100.palais-sommer {
+  background-image: url('../images/background/faridbenmiles-live-at-the-palais-sommer-dresden.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 1280px) {
+  .header-intro.parallax100.palais-sommer {
+    background-image: url('../images/background/faridbenmiles-live-at-the-palais-sommer-dresden-1280.webp');
+  }
+}
+
+@media (max-width: 768px) {
+  .header-intro.parallax100.palais-sommer {
+    background-image: url('../images/background/faridbenmiles-live-at-the-palais-sommer-dresden-768.webp');
+  }
+}
+
+@media (max-width: 480px) {
+  .header-intro.parallax100.palais-sommer {
+    background-image: url('../images/background/faridbenmiles-live-at-the-palais-sommer-dresden-480.webp');
+  }
+}
+
+/* Section fishing */
+.header-intro.parallax100.fishing {
+  background-image: url('../images/background/fishing-bw.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 1280px) {
+  .header-intro.parallax100.fishing {
+    background-image: url('../images/background/fishing-bw-1280.webp');
+  }
+}
+
+@media (max-width: 768px) {
+  .header-intro.parallax100.fishing {
+    background-image: url('../images/background/fishing-bw-768.webp');
+  }
+}
+
+@media (max-width: 480px) {
+  .header-intro.parallax100.fishing {
+    background-image: url('../images/background/fishing-bw-480.webp');
+  }
+}
+
+
 
 /*[ Menu dropdown ]
 ===========================================================*/
