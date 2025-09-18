@@ -134,6 +134,11 @@ iframe {
   outline: none !important;
 }
 
+.animated {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
 /*[ BACK TO TOP ]
 ///////////////////////////////////////////////////////////
 */
@@ -204,7 +209,7 @@ iframe {
 
 /* Section palais-sommer */
 .header-intro.parallax100.palais-sommer {
-  background-image: url('../images/background/faridbenmiles-live-at-the-palais-sommer-dresden.jpeg');
+  background-image: url('../images/background/faridbenmiles-live-at-the-palais-sommer-dresden.jpg');
   background-size: cover;
   background-position: center;
 }
