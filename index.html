@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+	<link rel="icon" type="images/png" href="images/icons/favicon.png"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="coverage/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -14,10 +14,9 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="coverage/animate.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="coverage/slick.css">
+	<link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="coverage/slick.css" media="print" onload="this.media='all'">
 
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="coverage/util.css">
 	<link rel="stylesheet" type="text/css" href="coverage/main.css">
@@ -982,36 +981,30 @@
 	
 
 
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script defer type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script defer type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
-	<script defer type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-<!--===============================================================================================-->
-	<script defer type="text/javascript" src="vendor/slick/slick.min.js"></script>
-	<script defer type="text/javascript" src="js/slick-custom.js"></script>
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/parallax100/parallax100.js"></script>
-	<script type="text/javascript">
-        $('.parallax100').parallax100();
-	</script>
-<!--===============================================================================================
-	<script  type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>-->
-<!--===============================================================================================
-	<script  type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>-->
-<!--===============================================================================================-->
-	<script  type="text/javascript" src="coverage/cookies.js"></script>
-	<script  type="text/javascript" src="js/g-calendar.js"></script>
-	<script  type="text/javascript" src="js/youtube.js"></script>
-	<script  type="text/javascript" src="js/toc-float.js"></script>
-	
-	<script src="js/main.js"></script>
+<!-- jQuery doit venir tôt et sans defer -->
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+<!-- Tes scripts perso -->
+<script defer src="coverage/cookies.js"></script>
+<script defer src="js/g-calendar.js"></script>
+<script defer src="js/youtube.js"></script>
+<script defer src="js/toc-float.js"></script>
+<script defer src="js/main.js"></script>
+
+<!-- Plugins -->
+<script defer src="vendor/parallax100/parallax100.js"></script>
+<script defer src="vendor/animsition/js/animsition.min.js"></script>
+<script defer src="vendor/bootstrap/js/popper.js"></script>
+<script defer src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script defer src="vendor/select2/select2.min.js"></script>
+<script defer src="vendor/slick/slick.min.js"></script>
+<script defer src="js/slick-custom.js"></script>
+<script defer>
+  document.addEventListener("DOMContentLoaded", function() {
+    $('.parallax100').parallax100();
+  });
+</script>
+
 <!-- Defer the loading of YouTube scripts 
 	<script defer src="https://www.youtube.com/iframe_api"></script>-->
 
