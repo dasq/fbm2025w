@@ -1,0 +1,119 @@
+.fa-facebook:before {
+    content: "\f09a"
+}
+
+
+.fa-instagram:before {
+    content: "\f16d"
+}
+
+.fa-bandcamp:before {
+    content: "\f2d5"
+}
+
+.fa-youtube:before {
+    content: "\f167"
+}
+
+.fa-calendar-alt:before,.fa-calendar-days:before {
+    content: "\f073"
+}
+
+/* --- Bootstrap essentials --- */
+html {
+  box-sizing: border-box;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+}
+
+a { color: #007bff; text-decoration: none; }
+a:hover { color: #0056b3; text-decoration: underline; }
+
+img { vertical-align: middle; border-style: none; }
+
+button,input { font-family: inherit; font-size: inherit; line-height: inherit; }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+@media (min-width: 576px) { .container { max-width: 540px; } }
+@media (min-width: 768px) { .container { max-width: 720px; } }
+
+.d-flex { display: flex!important; }
+.justify-content-center { justify-content: center!important; }
+.align-items-center { align-items: center!important; }
+
+/* --- Utilities from util.css --- */
+.m-b-0 { margin-bottom: 0!important; }
+.m-l-10 { margin-left: 10px!important; }
+.m-l-13 { margin-left: 13px!important; }
+.m-r-13 { margin-right: 13px!important; }
+.p-t-95 { padding-top: 95px!important; }
+.p-b-70 { padding-bottom: 70px!important; }
+.p-t-20 { padding-top: 20px!important; }
+.p-l-15 { padding-left: 15px!important; }
+.p-r-15 { padding-right: 15px!important; }
+.p-l-45 { padding-left: 45px!important; }
+
+/* --- Header & Menu --- */
+header { width: 100%; }
+.wrap-menu-header { width: 100%; position: relative; }
+.gradient1 { background: linear-gradient(90deg,#000,#333); } /* exemple */
+.trans-0-4 { transition: all 0.4s ease; }
+.trans-0-3 { transition: all 0.3s ease; }
+
+.wrap_header { display: flex; justify-content: space-between; align-items: center; }
+.logo img { max-height: 60px; }
+
+.wrap_menu { display: flex; }
+.menu ul { list-style: none; padding: 0; margin: 0; display: flex; }
+.menu ul li { position: relative; }
+.menu ul li a { display: block; padding: 10px 15px; }
+
+.sub_menu, .sidebar_sub_menu, .dropdown-content { display: none; position: absolute; background: #fff; list-style: none; padding: 10px 0; }
+.menu ul li:hover > .sub_menu, .menu ul li:hover > .dropdown-content { display: block; }
+
+.social a { display: inline-block; color: #fff; text-decoration: none; }
+.language-switcher { position: relative; }
+.language-options { display: none; position: absolute; top: 100%; left: 0; background: #fff; }
+.language-switcher:hover .language-options { display: block; }
+
+.btn-show-sidebar { background: none; border: none; cursor: pointer; }
+
+/* --- Sidebar --- */
+.sidebar { position: fixed; top: 0; left: -300px; width: 300px; height: 100%; overflow-y: auto; background: #111; color: #fff; transition: left 0.4s; z-index: 1050; }
+.sidebar.active { left: 0; }
+.btn-hide-sidebar { background: none; border: none; color: #fff; cursor: pointer; }
+.menu-sidebar li { list-style: none; }
+.menu-sidebar li a { display: block; color: #fff; text-decoration: none; padding: 10px 20px; text-align: center; }
+
+/* --- Banner Section --- */
+.section-banner { width: 100%; position: relative; overflow: hidden; }
+.home-banner { position: relative; width: 100%; }
+.home-banner-img { width: 100%; height: auto; display: block; }
+.wrap-content-slide1 { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 150px 15px 10px 15px; }
+.header-text h1, .header-text p { color: #fff; text-align: center; }
+.caption2-slide1 { font-size: 3rem; }
+.subtit1 { font-size: 1.25rem; margin-top: 10px; }
+
+.btn1 { background: #f05a28; color: #fff; border: none; padding: 12px 25px; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+.btn1 i { margin-left: 10px; }
+

@@ -82,7 +82,7 @@
 									<a href="concerts.html" class="dropbtn">Concerts <i class="fas fa-caret-down submenu-icon"></i></a>
 									<ul class="sub_menu dropdown-content">
 										<li>
-											<a href="book-acoustic-guitarist.html">Book Acoustic Guitarist</a>
+											<a href="book-aoustic-guitarist.html">Book Acoustic Guitarist</a>
 										</li>
 										<li>
 											<a href="pastconcerts.html">Past Concerts</a>
@@ -116,6 +116,7 @@
 
 					<!-- Social -->
 					<div class="social flex-w flex-l-m p-r-20">
+						<nav>
 							<a href="https://instagram.com/faridbenmiles" target="_blank" aria-label="Go to my Instagram Page"><i class="fa fa-instagram m-r-13" aria-hidden="true"></i></a>
 							<a href="https://youtube.com/faridbenmiles" target="_blank" aria-label="Go to my YouTube Page"><i class="fa fa-youtube m-r-13 m-l-13" aria-hidden="true"></i></a>
 							<a href="https://bandcamp.com/faridbenmiles" target="_blank" aria-label="Go to my Bandcamp Page"><i class="fa fa-bandcamp m-r-13 m-l-13" aria-hidden="true"></i></a>
@@ -135,6 +136,7 @@
 							
 							
 							<button class="btn-show-sidebar m-l-33 trans-0-4" aria-label="show menu"></button>
+						</nav>
 					</div>
 					 
 					 
@@ -273,23 +275,222 @@
 		</nav>
 	</div>
 	
+	<!-- Welcome -->
+	<section class="section-welcome bg1 p-t-00 p-b-0" id="my-offer">
+		<div class="">
+			<div class="content-intro p-t-40 p-b-80">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 t-center">
+							<!-- Primary Keywords (High-Intent for Booking)
+
+							Acoustic guitarist for hire
+							Book a guitarist for events
+							Solo guitarist for private concerts
+							Instrumental live music performer
+
+							Secondary Keywords (Music Discovery & Engagement)
+
+							Acoustic guitar concerts
+							Fingerstyle guitar performance
+							World music guitarist
+							Guitarist inspired by flamenco, jazz, and blues -->
+							<div class="p-around8 bo-rad-5">
+								<h2 class="tit6">
+									<a href="#" class="link-tit6">Guitarist</a>
+								</h2>
+								<div class="wrap-pic-blo1 bo-rad-5 hov-img-zoom">
+									<a href="#"><img src="images/photos/faridbenmiles-live-at-congress-dresden.jpg" alt="faridbenmiles-live-at-congress-dresden" class="bo-rad-5"></a>
+								</div>
+
+								<div class="wrap-text-blo1 p-t-35">
+									<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+										Solo Guitar Concerts
+									</h4></a>
+									
+									<div class="row key-points">
+										<div class="col-md-4">
+											<i class="fas fa-heart"></i>
+											<p>Emotion Driven Show</p>
+										</div>
+										<div class="col-md-4">
+											<i class="fas fa-guitar"></i>
+											<p>Classical to Jazz Guitar</p>
+										</div>
+										<div class="col-md-4">
+											<i class="fas fa-microphone-alt"></i>
+											<p>Public & Private Events</p>
+										</div>
+									</div>
+
+									<p class="descriptif">
+										When I pick up my guitar, my goal is simple: to create something true. 
+										Whether on stage or in a intimate setting, I want every note to carry meaning and every melody to tell a story. 
+										My music blends acoustic and electric influences, always aiming for a raw, emotional connection with the listener.
+									</p>
+									
+									 
+									
+									<a href="lessons.html" class="txtlink">
+										Discover my live performances
+									</a>
+									
+									<a href="#" class="btn4 flex-c-m size5 txt3 trans-0-4">
+										Book a Concert &#10095
+										
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 t-center">
+							<!-- SEO Considerations:
+
+							Keywords: Guitar teacher in Dresden, online guitar lessons, learn acoustic guitar, beginner to advanced guitar
+							Internal Linking: CTA to lesson booking page
+							Key Points: Show teaching philosophy, method, and student benefits -->
+							<div class="p-around8 bo-rad-5">
+								<h2 class="tit6">
+									<a href="lessons.html" class="link-tit6">Teacher</a>
+								</h2>
+								<div class="wrap-pic-blo1 bo-rad-5 hov-img-zoom">
+									<a href="lessons.html"><img src="images/photos/faridbenmiles-live-at-the-kindergarden-dresden.jpg" alt="faridbenmiles-live-at-the-kindergarden-dresden.jpg" class="bo-rad-5"></a>
+								</div>
+
+								<div class="wrap-text-blo1 p-t-35">
+									<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+										Private Guitar Lessons
+									</h4></a>
+									
+									<div class="row key-points">
+										<div class="col-md-4">
+											<i class="fas fa-chalkboard-teacher"></i>
+											<p>Online & Dresden lessons</p>
+										</div>
+										<div class="col-md-4">
+											<i class="fas fa-music"></i>
+											<p>Custom learning materials</p>
+										</div>
+										<div class="col-md-4">
+											<i class="fas fa-graduation-cap"></i>
+											<p>Clear, structured learning</p>
+										</div>
+									</div>
+
+									<p class="descriptif">
+										Music has been a lifelong journey, and teaching allows me to share the joy it has given me. 
+										I guide my students not just in technique but in finding their own voice on the guitar. 
+										Whether in private lessons, online courses, or ensemble workshops, my approach is centered on making music an enriching experience for everyone.
+									</p>
+									
+									
+									<a href="lessons.html" class="txtlink">
+										Learn more about my teaching
+									</a>
+
+									<a href="#" class="btn4 flex-c-m size5 txt3 trans-0-4">
+										Book a Free Trial Lesson &#10095
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 t-center">
+							<!-- SEO Considerations:
+
+							Keywords: Acoustic guitar compositions, world music, instrumental fingerstyle guitarist
+							Internal Linking: CTA to music, albums, and videos
+							Key Points: Unique style, artistic journey, inspirations -->
+							<div class="p-around8 bo-rad-5 ">
+								<h2 class="tit6">
+									<a href="musical-projects.html" class="link-tit6">Creator</a>
+								</h2>
+								<div class="wrap-pic-blo1 bo-rad-5 hov-img-zoom">
+									<a href="musical-projects.html"><img src="images/photos/faridbenmiles-recording-at-the-attic-in-dresden.jpg" alt="faridbenmiles-recording-at-the-attic-in-dresden" class="bo-rad-5"></a>
+								</div>
+
+								<div class="wrap-text-blo1 p-t-35">
+									<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+										Cultural Genre Fusion
+									</h4></a>
+									
+									<div class="row key-points">
+										<div class="col-md-4">
+											<i class="fas fa-compact-disc"></i>
+											<p>Original songs & covers</p>
+										</div>
+										<div class="col-md-4">
+											<i class="fas fa-video"></i>
+											<p>Live & studio takes</p>
+										</div>
+										<div class="col-md-4">
+											<i class="fas fa-globe"></i>
+											<p>World music sounds</p>
+										</div>
+									</div>
+
+									<p class="descriptif">
+										I see the guitar as a passport to different cultures. 
+										My compositions blend flamenco, jazz, blues, and world music, shaped by places I’ve been and stories I’ve encountered. 
+										Rather than fitting into a single genre, my music is about capturing moods, landscapes, and emotions—taking the listener on a journey beyond borders.
+									</p>
+									
+									
+									
+									<a href="musical-projects.html" class="txtlink">
+										Explore my musical projects
+									</a>
+
+									<a href="#" class="btn4 flex-c-m size5 txt3 trans-0-4">
+										Listen to my Album &#10095
+									</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>			
+		</div>
+	</section>
+	
+	<!-- Video -->
+	<section class="section-video parallax100 my-music" id="my-music">
+		<div class="content-video t-center p-t-225 p-b-250">
+
+			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
+				My Music
+			</h3>
+			
+			<div id="videoConsentBanner" style="display: none; position: fixed; bottom: 20px; left: 20px; background: rgba(0, 0, 0, 0.8); color: white; padding: 15px; border-radius: 5px;">
+				<p>To watch this video, you need to accept media cookies.</p>
+				<button onclick="acceptMediaCookies()">Accept</button>
+			</div>
+			<div class="btn-play ab-center size16 hov-pointer m-l-r-auto m-t-43 m-b-33" data-toggle="modal" data-target="#modal-video-01">
+				<div class="flex-c-m sizefull bo-cir bgwhite color1 hov1 trans-0-4">
+					<i class="fa fa-play fs-18 m-l-2" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+	
 	<!-- Intro -->
 	<section class="section-welcome bg1 p-t-0 p-b-0" id="this-is-me">
 		<div class="">
 			<div class="container p-t-0 p-b-20">
 				<div class="row d-flex align-items-center">
 					<div class="col-md-6 p-t-45 p-b-30">
-						<div class="  t-center">
+						<div class="wrap-text-welcome t-center">
 												
 							<div class="blo1 p-around8 bo-rad-5">
 								
 								<div class="wrap-text-blo1 p-t-35">
 									<span class="tit2 t-center">
-										
+										Welcome
 									</span>
-									<h2 class="tit3 t-center m-b-35 m-t-5">
-										The Story Behind the Music
-									</h2>
+									<h3 class="tit3 t-center m-b-35 m-t-5">
+										This is me
+									</h3>
 									
 									<!-- Mobile Image (Visible only on small screens) -->
 									<div class="awards d-md-none m-b-15 rounded-circle">
@@ -297,35 +498,38 @@
 											<img id="fbm-portrait-mobile" src="images/photos/faridbenmiles-portrait-square.jpg" alt="faridbenmiles-portrait" class="rounded-circle bo-rad-5">
 										</div>  
 									</div>
-	
-									<p class="m-b-0">
-										
-										Hi, I’m Farid — a guitarist born in Paris to Algerian roots, now based in Dresden, Germany.
-										Music has been my passion since childhood, and it has taken me across the world.</br></br>
 
-										Over the years, I’ve explored and performed a broad range of styles on both acoustic and electric guitar. Today, my artistic home lies in music that connects cultures, blending tradition with modern sensitivity.
-										</br></br>
-										I create, perform, and teach with the belief that music is a bridge — a place where people meet, feel, and grow together.
-										</br></br>Feel free to get in touch. I’d be happy to hear from you.
+									<p class="m-b-0">
+										I am a globetrotter in the field of the guitar, combining flamenco, jazz and blues with influences from Arabic and European music culture. 
+									Often compared to masters such as Andy McKee, John Butler and Rodrigo y Gabriela, my music invites you to dream of faraway lands. 
+									It takes you on a soulful journey through Asia, North Africa, Europe and beyond..
 									</p>
 									
-									<a href="" class="txtlink">
-										Discover my musical journey &#8595;
-									</a>									
+									<a href="about.html" class="txtlink">
+										Read more about me
+									</a>
+									
+									<div class="d-flex justify-content-center align-items-center">
+										<button class="btn4 flex-c-m txt3 trans-0-4" data-toggle="modal" data-target="#modal-calendar">
+											Let's get in touch <i class="m-l-10 fas fa-calendar-alt"></i>
+										</button>
+									</div>
+									
 								</div>
+
 							</div>
 						</div>
 					</div>
 					
 					<div class="col-md-6 p-t-45 p-b-30 d-none d-md-block">
-						<div class="  t-center">
+						<div class="wrap-text-welcome t-center">
 												
 							<div class="blo1 p-around8 bo-rad-5">
 								
 								<div class="wrap-welcome-blo2 p-t-35">
 									<div class="awards">
-										<div class="blo1 bo-rad-5">
-											<img id="fbm-portrait" src="images/photos/faridbenmiles-portrait-square.jpg" alt="faridbenmiles-portrait" class="blo1 bo-rad-5">
+										<div class="blo1 bo-rad-5 hov-img-zoom">
+											<a href="about.html"><img id="fbm-portrait" src="images/photos/faridbenmiles-portrait-square.jpg" alt="faridbenmiles-portrait" class="blo1 bo-rad-5"></a>
 										</div>	
 									</div>
 								</div>
@@ -337,299 +541,11 @@
 		</div>
 	</section>
 	
-	<!-- Image -->
-	<section class="section-intro">
-		<div class="header-intro parallax100 t-center p-t-225 p-b-250 palais-sommer" >
-			<em class="tit7 p-l-15 p-r-15">
-				"Educating the mind without educating the heart is no education at all" - Aristote
-			</em>
-		</div>
-	</section>
 	
-	<!-- Education -->
-	<section class="section-welcome bg1 p-t-0 p-b-0" id="this-is-me">
-		<div class="">
-			<div class="container p-t-0 p-b-20">
-				<div class="t-center p-t-45">
-					<span class="tit2 t-center m-b-35 m-t-5">
-						From Algiers to Dresden
-					</span>
-					<h2 class="tit3 t-center m-t-5">
-						My Musical Journey
-					</h2>	
-					
-				</div>
-				<div class="row d-flex align-items-center">
-					<div class="col-md-6 p-t-30 p-b-30">
-						<div class="t-center">
-												
-							<div class="blo1 p-around8 bo-rad-5">
-
-								<div class="wrap-text-blo1 p-t-0">
-									<p class="m-b-0">
-										<h3 class="txt5 trans-0-4 m-b-13 m-t-5">
-											Early life
-										</h3>
-										Traveling has been my life since forever, and even before myself. My parents were born in Algeria and are both from the Berber family. 
-										One of the most famous groups of Berbers is named the Tuareg who are known, among other things, for travelling and living in the desert of the Sahara. 
-										But they are just a small part of this big family...
-										</br></br>
-										Originally from the Maghreb (at least 10,000 BC), the Berbers expanded on the south to inhabit the whole Western North Africa and even more (Morocco, Algeria, Tunisia, Libya, Egypt, Mali, Niger, and Mauretania). 
-										Connections with the Scandinavians (Sami people) have even been found. 
-										The importance of the Berber culture in Arabic world is such that they are often miscalled Arabs. But beware if you do, they will have a pleasure reminding you the differences.=) 
-										</br></br>
-										So this is almost unsurprisingly that my parents also moved from their birthplace: I was then born in the suburb of Paris. I grew up in a mixed environment between the French culture and the Arab-Berber culture
-											
-									</p>									
-									
-								</div>
-
-							</div>
-							
-						</div>
-					</div>
-					
-					<div class="col-md-6 p-t-30 p-b-30">
-						<div class="  t-center">
-												
-							<div class="blo1 p-around8 bo-rad-5">
-								<div class="wrap-text-blo1 p-t-0">
-									<p class="m-b-0">
-										<h3 class="txt5 trans-0-4 m-b-13 m-t-5">
-											Education
-										</h3>
-										At the age of 6 years old, I entered the music conservatory of my city to learn classical guitar and graduated 13 years later in Classical Music and Chamber Music.
-
-										At this time, I had freshly entered the University to study IT Engineering. This was the beginning of a new life. 
-										Living for the first time alone, a friend convinced me to play the electric guitar and to start a band: the Trojans. Ha! :)
-										</br></br>
-										At first, I hated it. Even with 13 years learning to master the classical guitar, I was like a beginner. But this new aspect of music really got into me. This was a chance to meet new friends and to play some many new genres: rock, blues, funk, fusion, jazz, pop, experimental. The big band of the university was undoubtly the biggest learning experience. We had the chance to work every semester with a different professional musician (Nicolas Genest, Daniel Casimir, Alexis Torres, Olivier Sens). This was such a chance than sometimes I almost forgot I was in the school studying IT engineering.
-										</br></br>
-										Actually, I was not always there in Troyes during my studies. I have been an exchange student in New Orleans, an intern in Boston, and a researcher in London. Obviously, I always took the opportunity to join both my studies and my passion. I have been busking in the streets of London, studying the guitar in the rooms of Berklee with David Fiuczinsky and I graduated in Music Management and Art Marketing in the University of New Orleans.
-
-										Finally, I completed my engineering school and followed the path of the "classical" working life. I was one of those you can see everyday following each other in La Défense, major business district in Paris. But there is also an amazing art life there. So, I kept myself involved in the music life in Paris and in France performing in several scenarios from Rap to Jazz and from bands to movie soundtracks. Those experiences offered me the chance to play traditional music from middle-age occidental to Persian or even Indian folklore by learning the Oud and the Bouzouki. In the meantime, I graduated from the American School of Modern Music (Berklee French antenna).
-										</br></br>
-											
-									</p>									
-									
-								</div>
-
-							</div>
-							
-						</div>
-					</div>
-				
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<!-- Education -->
-	<section class="section-welcome bg9 p-t-0 p-b-0" id="this-is-me">
-		<div class="">
-			<div class="container p-t-0 p-b-20">
-				<div class="t-center p-t-45">
-					<span class="tit2 t-center m-b-35 m-t-5">
-						From Algiers to Dresden
-					</span>
-					<h2 class="tit3 t-center m-t-5">
-						My Musical Journey
-					</h2>	
-					
-				</div>
-				<div class="row d-flex align-items-center">
-					<div class="col-md-6 p-t-30 p-b-30">
-						<div class="t-center">
-												
-							<div class="blo1 p-around8 bo-rad-5">
-
-								<div class="wrap-text-blo1 p-t-0">
-									<p class="m-b-0">
-										<h3 class="txt5 trans-0-4 m-b-13 m-t-5">
-											Early life & Education
-										</h3>
-										My At the age of 6 years old, I entered the musical conservatory of my little city on the suburb of Paris. 13 years later, I graduated in Classical Guitar and Chamber Music.</br></br>
-
-										This happened while I was at the University studying IT Engineering and discovered the electric guitar. I fully immerged myself in these sounds, joined all possible musical projects offered and started leading the music club of the Uni. I was hooked!
-										</br></br>
-										This was such rich time. But also very scary. Even after so many years mastering the classical guitar, the electric guitar was a completely different instrument. But amongst all, improvising kept me speechless for almost 2 years.
-										</br></br>
-											
-									</p>									
-									
-								</div>
-
-							</div>
-							
-						</div>
-					</div>
-					
-					<div class="col-md-6 p-t-30 p-b-30">
-						<div class="  t-center">
-												
-							<div class="blo1 p-around8 bo-rad-5">
-								<div class="wrap-text-blo1 p-t-0">
-									<table class="cv-table">
-										<h3 class="txt5 trans-0-4 m-b-13">
-											Education
-										</h3>
-										<thead>
-										  <tr>
-											<th>Year</th>
-											<th>Location</th>
-											<th>Study</th>
-											<th>Establishment</th>
-										  </tr>
-										</thead>
-										<tbody>
-										  <tr>
-											<td>1992-2005</td>
-											<td>Houilles (France)</td>
-											<td>Classical Guitar & Chamber Music</td>
-											<td>Conservatory of Music</td>
-										  </tr>
-										  <tr>
-											<td>2005-2007</td>
-											<td>Troyes (France)</td>
-											<td>Modern & Jazz Guitar</td>
-											<td>Conservatory of Music</td>
-										  </tr>
-										  <tr>
-											<td>2007-2008</td>
-											<td>Boston (USA)</td>
-											<td>Jazz Guitar</td>
-											<td>Private Lessons with David Fiuczynski</td>
-										  </tr>
-										  <tr>
-											<td>2011-2012</td>
-											<td>Paris (France)</td>
-											<td>Jazz Improvisation & Orchestration</td>
-											<td>Paris College of Music</td>
-										  </tr>
-										</tbody>
-									</table>									
-									
-								</div>
-
-							</div>
-							
-						</div>
-					</div>
-				
-				</div>
-			</div>
-		</div>
-	</section>
-	
-		<!-- Education -->
-	<section class="section-welcome bg9 p-t-0 p-b-0" id="this-is-me">
-		<div class="">
-			<div class="container p-t-0 p-b-20">
-				<div class="t-center p-t-45">
-					<span class="tit2 t-center m-b-35 m-t-5">
-						From Algiers to Dresden
-					</span>
-					<h2 class="tit3 t-center m-t-5">
-						My Musical Journey
-					</h2>	
-					
-				</div>
-				<div class="row d-flex align-items-center">
-					<div class="col-md-6 p-t-30 p-b-30">
-						<div class="t-center">
-												
-							<div class="blo1 p-around8 bo-rad-5">
-
-								<div class="wrap-text-blo1 p-t-0">
-									<p class="m-b-0">
-										<h3 class="txt5 trans-0-4 m-b-13 m-t-5">
-											Inspiration & Experience
-										</h3>
-										My At the age of 6 years old, I entered the musical conservatory of my little city on the suburb of Paris. 13 years later, I graduated in Classical Guitar and Chamber Music.</br></br>
-
-										This happened while I was at the University studying IT Engineering and discovered the electric guitar. I fully immerged myself in these sounds, joined all possible musical projects offered and started leading the music club of the Uni. I was hooked!
-										</br></br>
-										This was such rich time. But also very scary. Even after so many years mastering the classical guitar, the electric guitar was a completely different instrument. But amongst all, improvising kept me speechless for almost 2 years.
-										</br></br>
-											
-									</p>									
-									
-								</div>
-
-							</div>
-							
-						</div>
-					</div>
-					
-					<div class="col-md-6 p-t-30 p-b-30">
-						<div class="  t-center">
-												
-							<div class="blo1 p-around8 bo-rad-5">
-								<div class="wrap-text-blo1 p-t-0">
-									<table class="cv-table">
-										<h3 class="txt5 trans-0-4 m-b-13">
-											Musical Collaborations
-										</h3>
-										<thead>
-										  <tr>
-											<th>Year</th>
-											<th>Location</th>
-											<th>Event / Study / Project</th>
-											<th>Instrument / Role</th>
-											<th>Form</th>
-										  </tr>
-										</thead>
-										<tbody>
-										  <tr>
-											<td>1999-2005</td>
-											<td>Paris (France)</td>
-											<td>Solist of the Guitar Orchestra</td>
-											<td>Classical Guitar</td>
-											<td>Solo & Guitar Orchestra Solist</td>
-										  </tr>
-										  <tr>
-											<td>2005</td>
-											<td>London (England)</td>
-											<td>First Busking & Live Experiences</td>
-											<td>Solo Acoustic Guitar</td>
-											<td>Solo</td>
-										  </tr>
-										  <tr>
-											<td>2005-2009</td>
-											<td>Troyes (France)</td>
-											<td>Concerts & Workshops with the Big Band of Troyes</td>
-											<td>Electric Guitar</td>
-											<td>Collaborations with Olivier Sens, Nicolas Genest, Daniel Casimir, Alexis Torres...</td>
-										  </tr>
-										  <tr>
-											<td>2009-2013</td>
-											<td>Paris (France)</td>
-											<td>Side Guitarist for many musical projects</td>
-											<td>Electric Guitar, Acoustic Guitar, Oud, Bouzouki</td>
-											<td>Composition, Live, Film Music</td>
-										  </tr>
-										</tbody>
-									</table>								
-									
-								</div>
-
-							</div>
-							
-						</div>
-					</div>
-				
-				</div>
-			</div>
-		</div>
-	</section>
-
-	
-	
-	<section class="bg9 " id="reviews">
+	<section class="bg9 " id="awards">
 		<div class="title-review t-center m-b-2 p-t-50">
-			<span class="tit2 t-center">What my students says</span>
 			<h3 class="tit3 t-center m-b-35 m-t-5">
-				Reviews
+				Awards
 			</h3>
 		</div>
 			
@@ -640,24 +556,21 @@
 					<div class="item-slick3 item1-slick3">
 						<div class="wrap-content-slide3 p-b-50 p-t-50">
 							<div class="container">
-								
-								<div class="content-review m-t-10 animated visible-false" data-appear="zoomIn">
-									<p class="t-center txt12 size15 m-l-r-auto">
-										"Dank Farid's professioneller Anleitung und engagierten Unterrichts habe ich meine musikalischen Fertigkeiten erheblich verbessert. 
-										Sie hat mir nicht nur geholfen, technische Fähigkeiten wie das Greifen von Akkorden und das Spielen von Melodien zu entwickeln, 
-										sondern auch ein Verständnis für musikalische Konzepte wie Rhythmus, Dynamik und Ausdruck vermittelt.</br>
-										Besonders hervorzuheben ist, dass Farid mich nicht nur auf die musikalischen Aspekte meiner Prüfungen vorbereitet hat, 
-										sondern auch auf die praktischen Anforderungen meines Berufs als Erzieherin. Sie hat mir geholfen, ein breites Repertoire an Kinderliedern 
-										zu erlernen und meine Fähigkeiten im Singen und Spielen gleichzeitig zu verbessern, was mir dabei hilft, den Kindern in der Kindertagesstätte 
-										musikalische Erfahrungen zu vermitteln.</br>
-										Dank der Unterstützung und Ermutigung von Farid habe ich meine Prüfungen erfolgreich bestanden und arbeite nun seit fast einem Jahr als Erzieherin. 
-										Ich schätze die Fortsetzung des Unterrichts bei Farid, um meine Fähigkeiten weiter zu entwickeln und meine Leidenschaft für Musik zu fördern.</br>
-										Ich bin Farid sehr dankbar für ihre Professionalität, Geduld und Fachkenntnisse. Ihr Unterricht hat mir nicht nur geholfen, meine Ziele zu erreichen, 
-										sondern auch mein Selbstvertrauen gestärkt und meine Liebe zur Musik vertieft.”
-									</p>									
+								<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
+									<img src="images/photos/schmalfilmtage.webp" alt="faridbenmiles-schmalfiltage">
 								</div>
-								<div class="more-review txt4l t-center animated visible-false m-t-22" data-appear="fadeInUp">
-									Lisa - Erzieherin
+
+								<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
+									<p class="t-center txt12 size15 m-l-r-auto">
+										<b>Best Live Film Scoring Performance</b></br>"It was brought to life with live music once again—and what a delight it was! In front of a full house, 
+								Farid Ben Miles won the jury prize for his score to the film Hochofen (Blast Furnace). 
+								According to the jury—composed of Annett Groh, Florian Hohmann, and Christian "Lasse" Brähler—the guitarist created the perfect mood for the film, 
+								seamlessly merging image and sound. With his calm and atmospheric melodies, Miles set the blast furnace ablaze in the Motorenhalle.”
+									</p>
+
+									<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
+										Dresdner Schmalfilmtage 2022
+									</div>
 								</div>
 							</div>
 						</div>
@@ -666,42 +579,42 @@
 					<div class="item-slick3 item2-slick3">
 						<div class="wrap-content-slide3 p-b-50 p-t-50">
 							<div class="container">
-								
+								<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
+									<img src="images/photos/Dresdner-Leinwand.png" alt="faridbenmiles-soundofdresden">
+								</div>
 
-								<div class="content-review m-t-10 animated visible-false" data-appear="zoomIn">
+								<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
 									<p class="t-center txt12 size15 m-l-r-auto">
-										"Dank Farid's fachkundiger Anleitung und engagiertem Unterricht habe ich meine Spieltechniken erheblich verbessert. 
-										Farid hat mir geholfen, an mehrstimmigen Liedern zu arbeiten und meine Spielkoordination zu verbessern. 
-										Wir haben intensiv an der Spannung meiner Finger der linken Hand und an der Präzision meiner rechten Hand gearbeitet, um die richtigen Saiten zu treffen.</br>
-										Dank Farid’s Unterstützung und Geduld habe ich meine musikalischen Fähigkeiten erheblich verbessert. Ich bin nun in der Lage, 
-										den Kindern im Kindergarten musikalische Erfahrungen zu vermitteln und sie besser zu unterrichten.”
+										<b>Sound of Dresden - Public Price</b></br>"The instrumental guitarist from France has traveled the world and developed his own unique musical language, 
+									drawing from many sources: African, European, and American. World music in the truest sense, 
+									yet so distinctive and captivating that he has become the audience favorite.”
 									</p>
 
-									
-								</div>
-							<div class="more-review txt4l t-center animated visible-false m-t-22" data-appear="fadeInUp">
-										Kirsten - Erzieherin
+									<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
+										Sound of Dresden 2017
 									</div>
 								</div>
+							</div>
 						</div>
 					</div>
 
 					<div class="item-slick3 item3-slick3">
 						<div class="wrap-content-slide3 p-b-50 p-t-50">
 							<div class="container">
-								
+								<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
+									<img src="images/photos/heydresden.jpg" alt="faridbenmiles-VIERTELtakt">
+								</div>
 
-								<div class="content-review m-t-10 animated visible-false" data-appear="zoomIn">
+								<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
 									<p class="t-center txt12 size15 m-l-r-auto">
-										"With deliberately crafted rhythms, he played his way into the hearts of the audience with his “Cinematic World Fingerstyle.” 
+										<b>VIERTELtakt Winner</b></br>"With deliberately crafted rhythms, he played his way into the hearts of the audience with his “Cinematic World Fingerstyle.” 
 								Farid Ben Miles transported us with his magnificent acoustic compositions into a world where we could peacefully let our thoughts wander. 
 								From the Orient to New Zealand, from Paris to the Florence of the Elbe, from the Land of Takka-Tukka Adventures to The NeverEnding Story — 
 								there were no limits to dreams and imagination.”
 									</p>
 
-								</div>
-								<div class="more-review txt4l t-center animated visible-false m-t-22" data-appear="fadeInUp">
-										Kirsten - Erzieherin
+									<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
+										ViertelTakt Dresden 2016
 									</div>
 								</div>
 							</div>
@@ -715,6 +628,87 @@
 			
 		</div>	
 	</section>
+	
+
+
+	
+	<section class="section-intro">
+		<div class="header-intro parallax100 t-center p-t-225 p-b-250 palais-sommer" >
+			<em class="tit7 p-l-15 p-r-15">
+				"Giving all my heart when playing became a crucial goal I always challenge myself to achieve."
+			</em>
+		</div>
+	</section>
+
+	
+	
+
+	<!-- Booking -->
+	<section class="section-booking bg1 p-t-0 p-b-0" id="get-in-touch">
+		<div class="">
+			<div class="container p-t-0 p-b-20">
+				<div class="row d-flex align-items-center">
+					<!-- <div class="col-md-6 p-t-45 p-b-30">-->
+					<div class="col p-t-45 p-b-30">
+						<div class="wrap-text-welcome t-center">
+												
+							<div class="blo1 p-around8 bo-rad-5">
+								
+								<div class="wrap-text-blo1 p-t-35">
+									<span class="tit2 t-center">
+										Let's get to know each other
+									</span>
+									<h3 class="tit3 t-center m-b-35 m-t-5">
+										Rendez-vous
+									</h3>
+									
+									<!-- Mobile Image (Visible only on small screens) 
+									<div class="awards d-none d-md-none m-b-15">
+										<div class="blo1 bo-rad-5 ">
+											<img id="fbm-tedx-mobile" class="bo-rad-5" src="images/photos/fbm-tedx-small.jpg" alt="faridbenmiles-portrait">
+										</div>	
+									</div>-->
+
+									<p class="m-b-25">
+										Whether you’re looking to book a lesson, schedule a private concert, or share your ideas, the easiest way to get started is right here. 
+										I’d love to hear more about your plans and work together to create something truly special.
+										<br>
+										Simply choose a time that works for you using the link below—I look forward to connecting with you!
+									</p>
+
+									<div class="d-flex justify-content-center align-items-center">
+										<button class="btn4 flex-c-m txt3 trans-0-4" data-toggle="modal" data-target="#modal-calendar">
+											Let's get in touch <i class="m-l-10 fas fa-calendar-alt"></i>
+										</button>
+									</div>
+									
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+					<!--<div class="col-md-6 p-t-45 p-b-30 d-none d-md-block">
+						<div class="wrap-text-welcome t-center">
+												
+							<div class="blo1 p-around8 bo-rad-5">
+								
+								<div class="wrap-welcome-blo2 p-t-35">
+									<div class="awards">
+										<div class="blo1 bo-rad-5 hov-img-zoom">
+											<a href="contact.html" class="txt14 c-white " data-toggle="modal" data-target="#modal-calendar"><img id="fbm-tedx" src="images/photos/fbm-tedx-small.jpg" alt="faridbenmiles-portrait" class="blo1 bo-rad-5"></a>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>-->
+									
+				</div>
+			</div>
+		</div>
+	</section>
+
 	
 	<!-- Sign up -->
 	<section class="bg9 ">
@@ -972,7 +966,7 @@
 				<div class="modal-body">
 					<!-- Consent Banner (Hidden by Default) -->
 					<div id="calendar-consent-banner" class="calendar-consent-banner">
-						<p>I use Google Calendar for booking appointment, which requires to set cookies. </br>Please accept to access the Google Calendar.</p>
+						<p>We use Google Calendar, which requires to set cookies. Please accept to access the Google Calendar.</p>
 						<button id="accept-calendar-consent">Accept</button>
 					</div>
 					<!-- Google Calendar Iframe -->

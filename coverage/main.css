@@ -1,40 +1,34 @@
 /* --- Karla --- */
 @font-face {
   font-family: 'Karla';
-  src: url('../fonts/Karla/static/Karla-Regular.woff2') format('woff2'),
-       url('../fonts/Karla/static/Karla-Regular.ttf') format('truetype');
+  src: url('../fonts/Karla/static/Karla-Regular.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'KarlaItalic';
-  src: url('../fonts/Karla/static/Karla-Italic.woff2') format('woff2'),
-       url('../fonts/Karla/static/Karla-Italic.ttf') format('truetype');
+  src: url('../fonts/Karla/static/Karla-Italic.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'KarlaBold';
-  src: url('../fonts/Karla/static/Karla-Bold.woff2') format('woff2'),
-       url('../fonts/Karla/static/Karla-Bold.ttf') format('truetype');
+  src: url('../fonts/Karla/static/Karla-Bold.woff2') format('woff2');
   font-display: swap;
 }
 
 /* --- Lora --- */
 @font-face {
   font-family: 'Lora';
-  src: url('../fonts/Lora/static/Lora-Regular.woff2') format('woff2'),
-       url('../fonts/Lora/static/Lora-Regular.ttf') format('truetype');
+  src: url('../fonts/Lora/static/Lora-Regular.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'LoraSemiBold';
-  src: url('../fonts/Lora/static/Lora-SemiBold.woff2') format('woff2'),
-       url('../fonts/Lora/static/Lora-SemiBold.ttf') format('truetype');
+  src: url('../fonts/Lora/static/Lora-SemiBold.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'LoraItalic';
-  src: url('../fonts/Lora/static/Lora-Italic.woff2') format('woff2'),
-       url('../fonts/Lora/static/Lora-Italic.ttf') format('truetype');
+  src: url('../fonts/Lora/static/Lora-Italic.woff2') format('woff2');
   font-display: swap;
 }
 
@@ -303,7 +297,6 @@ iframe {
   position: fixed;
   height: 100px;
   background-color: #5C1417;
-  opacity: 0.95;
   box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -723,7 +716,7 @@ iframe {
 	min-height: 90vh;
 }
 
-.header-text {margin-top: 20vh; }
+.header-text {margin-top: 440px; }
 
 /* Slick vFarid */
 
@@ -1218,8 +1211,9 @@ input {
 ///////////////////////////////////////////////////////////
 */
 .flag-icon {
-  width: 20px; /* You can adjust this size */
+  width: 20px; 
   height: auto;
+  margin-right: 5px;
 }
 
 .language-switcher {
@@ -1241,7 +1235,7 @@ input {
 .language-options {
   display: none;
   position: absolute;
-  top: 200%;
+  top: calc(100% + 5px); /* Juste 5px en dessous */
   right: 0;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -1253,19 +1247,30 @@ input {
   z-index: 1000;
 }
 
+/* Ajouter un padding invisible pour créer un pont */
+.language-switcher::after {
+  content: '';
+  position: absolute;
+  bottom: -10px; /* Étendre la zone hover vers le bas */
+  left: 0;
+  width: 100%;
+  height: 20px; /* Zone tampon entre le bouton et le dropdown */
+  background: transparent;
+}
+
 .language-options li {
   padding: 8px 10px;
 }
+
 .language-options li:hover {
-	background-color: #fff !important;
+  background-color: #f8f8f8 !important; /* Changé pour voir l'effet hover */
 }
+
 .language-options li a {
   text-decoration: none;
   color: #2A211E !important;
-}
-
-.language-options flag-icon:hover {
-	background-color: white;
+  display: flex;
+  align-items: center;
 }
 
 .language-options li a:hover {

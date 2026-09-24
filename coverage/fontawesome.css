@@ -28,13 +28,6 @@
 }
 
 
-.fa-calendar-alt:before,.fa-calendar-days:before {
-    content: "\f073"
-}
-
-
-
-
 .fa-chalkboard-teacher:before,.fa-chalkboard-user:before {
     content: "\f51c"
 }
@@ -116,20 +109,8 @@
 
 
 
-.fa-bandcamp:before {
-    content: "\f2d5"
-}
 
 
-
-.fa-facebook:before {
-    content: "\f09a"
-}
-
-
-.fa-instagram:before {
-    content: "\f16d"
-}
 
 
 .fa-tiktok:before {
@@ -137,9 +118,7 @@
 }
 
 
-.fa-youtube:before {
-    content: "\f167"
-}
+
 
 
 :host,:root {
@@ -164,6 +143,24 @@
 .fa-facebook:before {
     content: "\f09a"
 }
+
+
+.fa-instagram:before {
+    content: "\f16d"
+}
+
+.fa-bandcamp:before {
+    content: "\f2d5"
+}
+
+.fa-youtube:before {
+    content: "\f167"
+}
+
+.fa-calendar-alt:before,.fa-calendar-days:before {
+    content: "\f073"
+}
+
 .fa-angle-left:before {
     content: "\f104"
 }

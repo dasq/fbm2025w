@@ -357,6 +357,19 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 	font-size: 30px;
 	letter-spacing: 2px;
 	color: #5C1417 ;
+	/*padding-bottom: 10px;*/
+	text-transform: uppercase;
+}
+
+.alt-color {
+	color: rgb(33, 37, 41);
+}
+
+.link-tit6 {
+	font-family: KarlaBold;
+	font-size: 30px;
+	letter-spacing: 2px;
+	color: #5C1417 ;
 	padding-bottom: 10px;
 	text-transform: uppercase;
 }
@@ -737,6 +750,7 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 	.item1-slick1 .flex-col-c-m {min-height: 540px !important;}
 	.section-welcome .col-md-4 img {width: 300px !important;}
 	.tit6 {font-size: 23px;}
+	.link-tit6 {font-size: 23px;}
 	.section-intro {height: 340px;}
 	.section-intro .p-t-225 {padding-top:150px;}	
 	.section-intro .p-b-250 {padding-bottom:150px;}
@@ -834,7 +848,7 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
         display:none!important;
     }
 	#fbm-tedx-mobile {width: 200px;}
-	.header-text {margin-top: 210px !important; }
+	.header-text {margin-top: 260px !important; }
 	.section-video {height: 500px;}
 	.section-intro {height: 290px;}
 	.section-intro .p-t-225 {padding-top:120px;}	
@@ -912,6 +926,9 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
     font-size: 14px;
   }
   .tit6 {
+    font-size: 24px;
+  }
+  .link-tit6 {
     font-size: 24px;
   }
    .tit3 {
