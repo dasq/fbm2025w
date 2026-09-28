@@ -36,13 +36,13 @@
 @font-face { 
 	font-family: 'Font Awesome 6 Free'; font-style: normal; 
 	font-weight: 900; 
-	src: url('../fonts/font-awesome-6.0.0-beta3/fa-solid-900.woff2') format('woff2'); 
+	src: url('../fonts/font-awesome-6.0.0-beta3/fa-solid-cleaned') format('woff2'); 
 	} 
 @font-face { 
 	font-family: 'Font Awesome 6 Free'; 
 	font-style: normal; 
 	font-weight: 900; 
-	src: url('../fonts/font-awesome-6.0.0-beta3/fa-brands-400.woff2') format('woff2'); 
+	src: url('../fonts/font-awesome-6.0.0-beta3/fa-brands-cleaned.woff2') format('woff2'); 
 	}
 
 
