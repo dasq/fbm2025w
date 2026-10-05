@@ -39,17 +39,21 @@
 }
 
 
-
 .fa-envelope:before {
     content: "\f0e0"
 }
-
-
 
 .fa-globe:before {
     content: "\f0ac"
 }
 
+.fa-comment-dots:before {
+  content: "\f4ad";
+}
+
+.fa-whatsapp:before {
+  content: "\f232";
+}
 
 
 .fa-graduation-cap:before,.fa-mortar-board:before {
